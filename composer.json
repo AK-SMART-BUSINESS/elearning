@@ -1,0 +1,20 @@
+{
+    "name": "angel/api-test",
+    "description": "PHP API",
+    "require": {
+        "spipu/html2pdf": "^5.2"
+    },
+    "authors": [
+        {
+            "name": "Bindié Ange",
+            "email": "angelissdev@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\Libs\\": "libs/",
+            "Core\\Config\\": "config/"
+        }
+    }
+}
