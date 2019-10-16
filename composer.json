@@ -14,7 +14,8 @@
     "autoload": {
         "psr-4": {
             "Core\\Libs\\": "libs/",
-            "Core\\Config\\": "config/"
+            "Core\\Config\\": "config/",
+            "App\\": "src/"
         }
     }
 }

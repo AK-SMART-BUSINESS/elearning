@@ -12,6 +12,10 @@ class ComposerStaticInit49ee92454d52b95921d125c33a9c3b41
             'Core\\Libs\\' => 10,
             'Core\\Config\\' => 12,
         ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -22,6 +26,10 @@ class ComposerStaticInit49ee92454d52b95921d125c33a9c3b41
         'Core\\Config\\' => 
         array (
             0 => __DIR__ . '/../..' . '/config',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
