@@ -40,13 +40,13 @@ class Main
     require "public/tpl/template.phtml";
   }
 
-  public function connexion()
-  {
-    ob_start();
-    require "public/tpl/signin.phtml";
-      $output = ob_get_clean();
-    require "public/tpl/template.phtml";
-  }
+  // public function connexion()
+  // {
+  //   ob_start();
+  //   require "public/tpl/signin.phtml";
+  //     $output = ob_get_clean();
+  //   require "public/tpl/template.phtml";
+  // }
 
   public function inscription()
   {
@@ -56,32 +56,44 @@ class Main
     require "public/tpl/template.phtml";
   }
 
-  /**
-   * Déconnecte l'utilisateur de l'application
-   */
-  /*public function logout()
-  {
-    \App\Session::killSession("uid");
-    session_destroy();
-    header('location: '.URL);
-  }*/
   /*--------------------------------------------------------*/
   #########             ADMIN PANEL              ############
   /*--------------------------------------------------------*/
     public function log()
     {
         ob_start();
-        require "panel/tpl/login.phtml";
+        require "public/panel/tpl/login.phtml";
         $output = ob_get_clean();
-        require "panel/tpl/tpl.phtml";
+        require "public/panel/tpl/tpl.phtml";
     }
-    public function dashboard()
+    public function classroom()
     {
         ob_start();
-        require "panel/tpl/dashbord.phtml";
+        require "public/panel/tpl/dashbord.phtml";
         $output = ob_get_clean();
-        require "panel/tpl/tpl.phtml";
+        require "public/panel/tpl/tpl.phtml";
     }
+
+  /*--------------------------------------------------------*/
+  #########             CLASSROOM PANEL              #########
+  /*--------------------------------------------------------*/
+  public function connexion()
+  {
+      // ob_start();
+      require "public/classroom/login.phtml";
+      // $output = ob_get_clean();
+      // require "puplic/classroom/tpl.phtml";
+  }
+  public function dashboard()
+  {
+      ob_start();
+      require "public/classroom/dashbord.phtml";
+      $output = ob_get_clean();
+      require "public/classroom/tpl.phtml";
+  }
+
+
+
 
     public function signout()
     {
