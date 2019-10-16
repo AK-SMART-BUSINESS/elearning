@@ -40,6 +40,22 @@ class Main
     require "public/tpl/template.phtml";
   }
 
+  public function connexion()
+  {
+    ob_start();
+    require "public/tpl/signin.phtml";
+      $output = ob_get_clean();
+    require "public/tpl/template.phtml";
+  }
+
+  public function inscription()
+  {
+    ob_start();
+    require "public/tpl/register.phtml";
+      $output = ob_get_clean();
+    require "public/tpl/template.phtml";
+  }
+
   /**
    * Déconnecte l'utilisateur de l'application
    */
