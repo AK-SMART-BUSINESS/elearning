@@ -29,14 +29,19 @@ class Application
    * Configure les actions (Les pages à ajoutées) et les paramètres
    */
     private function configuration(){
-
-      if ($this->url == "") {
-        $this->action = "accueil";
-      }else {
+      // echo '<pre>';
+      // var_dump($_SERVER);
+      // die();
+      if (preg_match('/panel/', $_GET["url"]) && !isset($_SESSION['admin'])) {
+        $this->action = "log";
         $url = trim($this->url,'/');
         $url = explode('/', $url);
-        $action = $url[0];
+        unset($url[0]);
+        
+        $action = $url[1];
+        
         $action = explode('-',$action);
+       
         if (count($action) == 1) {
           $this->action = $action[0];
         }else {
@@ -45,11 +50,39 @@ class Application
             $this->action .= ucfirst($action[$i]);
           }
         }
-
         unset($url[0]);
+        unset($url[1]);
         $this->url_params = !empty($url) ? $url : [];
         unset($url);
+      }elseif (preg_match('/classroom/', $_GET["url"]) ) {
+        $this->action = "connexion";
+      }else {
+        if ($this->url == "") {
+          $this->action = "accueil";
+        }
       }
+
+      // if ($this->url == "") {
+      //   $this->action = "accueil";
+      // }
+      // else {
+      //   $url = trim($this->url,'/');
+      //   $url = explode('/', $url);
+      //   $action = $url[0];
+      //   $action = explode('-',$action);
+      //   if (count($action) == 1) {
+      //     $this->action = $action[0];
+      //   }else {
+      //     $this->action = $action[0];
+      //     for ($i=1; $i < count($action); $i++) { 
+      //       $this->action .= ucfirst($action[$i]);
+      //     }
+      //   }
+
+      //   unset($url[0]);
+      //   $this->url_params = !empty($url) ? $url : [];
+      //   unset($url);
+      // }
     }
 
     private function setPageFile()

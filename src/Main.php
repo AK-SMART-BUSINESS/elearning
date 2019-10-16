@@ -68,20 +68,19 @@ class Main
   /*--------------------------------------------------------*/
   #########             ADMIN PANEL              ############
   /*--------------------------------------------------------*/
-    public function dash()
+    public function log()
     {
         ob_start();
-        require "pg/dashbord.phtml";
+        require "panel/tpl/login.phtml";
         $output = ob_get_clean();
-        require "tpl.phtml";
+        require "panel/tpl/tpl.phtml";
     }
-
-    public function account()
+    public function dashboard()
     {
         ob_start();
-        require "pg/compte.phtml";
+        require "panel/tpl/dashbord.phtml";
         $output = ob_get_clean();
-        require "tpl.phtml";
+        require "panel/tpl/tpl.phtml";
     }
 
     public function signout()
