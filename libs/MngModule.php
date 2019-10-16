@@ -4,19 +4,19 @@ namespace Core\Libs;
 
 
 use Core\Config\Database;
-use Core\Libs\C\Apprenant;
-use Core\Libs\I\ApprenantInt;
+use Core\Libs\C\Module;
+use Core\Libs\I\ModuleInt;
 
-class MngApprenant extends Database implements ApprenantInt
+class MngModule extends Database implements ModuleInt
 {
-    public function addApprenant(Apprenant $apprenant)
+    public function addModule(Module $module)
     {
-        // TODO: Implement addApprenant() method.
+        // TODO: Implement addModule() method.
     }
 
-    public function getApprenants()
+    public function getModule()
     {
-        $sql = "SELECT * FROM apprenant";
+        $sql = "SELECT * FROM module";
 
         try{
             $request = $this->getDb()->prepare($sql);

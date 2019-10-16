@@ -3,7 +3,7 @@
 namespace Core\Libs\C;
 
 
-class Formation
+class ModuleFormation
 {
 
 }

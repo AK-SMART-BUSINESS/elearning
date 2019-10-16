@@ -4,19 +4,19 @@ namespace Core\Libs;
 
 
 use Core\Config\Database;
-use Core\Libs\C\Apprenant;
-use Core\Libs\I\ApprenantInt;
+use Core\Libs\C\Formation;
+use Core\Libs\I\FormationInt;
 
-class MngApprenant extends Database implements ApprenantInt
+class MngFormation extends Database implements FormationInt
 {
-    public function addApprenant(Apprenant $apprenant)
+    public function addFormation(Formation $formation)
     {
-        // TODO: Implement addApprenant() method.
+        // TODO: Implement addFormation() method.
     }
 
     public function getApprenants()
     {
-        $sql = "SELECT * FROM apprenant";
+        $sql = "SELECT * FROM formation";
 
         try{
             $request = $this->getDb()->prepare($sql);
@@ -31,9 +31,9 @@ class MngApprenant extends Database implements ApprenantInt
         }
     }
 
-    public function getApprenant($id_apprenant)
+    public function getFormation($id_formation)
     {
-        // TODO: Implement getApprenant() method.
+        // TODO: Implement getFormation() method.
     }
 
 }
