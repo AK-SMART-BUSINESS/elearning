@@ -32,7 +32,7 @@ class Application
       // echo '<pre>';
       // var_dump($_SERVER);
       // die();
-      if (preg_match('/panel/', $_GET["url"]) && !isset($_SESSION['admin'])) {
+      if (isset($_GET["url"]) && preg_match('/panel/', $_GET["url"]) && !isset($_SESSION['admin'])) {
         $this->action = "log";
         $url = trim($this->url,'/');
         $url = explode('/', $url);
