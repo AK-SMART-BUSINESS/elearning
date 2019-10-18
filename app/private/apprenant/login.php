@@ -28,12 +28,12 @@ if (isset($_POST) && !empty($_POST)){
             $_SESSION['user'] = $apprenant->pseudo_app;
         }else{
             $result['success'] = false;
-            $result['message'] = '<b>Accès réfuser !</b><br>Mot de passe incorrect';
+            $result['message'] = '<b>Accès réfusé !</b><br>Mot de passe incorrect';
             $result['data'] = $app->getErrorMsg();
         }
     }else{
         $result['success'] = false;
-        $result['message'] = '<b>Accès réfuser !</b><br>Ce compte n\'existe pas';
+        $result['message'] = '<b>Accès réfusé !</b><br>Ce compte n\'existe pas';
         $result['data'] = $app->getErrorMsg();
     }
 } else {
