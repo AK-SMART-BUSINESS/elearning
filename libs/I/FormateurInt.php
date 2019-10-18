@@ -18,4 +18,13 @@ interface FormateurInt
     public function getFormateurs();
 
     public function getFormateur($id_formateur);
+
+    public function updateFormateur(Formateur $formateur, $id_formateur);
+
+    public function deleteFormateur($id_formateur);
+
+    public function enableFormateur($id_formateur);
+
+    public function disableFormateur($id_formateur);
+
 }
