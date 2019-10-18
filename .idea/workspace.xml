@@ -5,29 +5,685 @@
     <list default="true" id="7c2a52e5-0f5b-46cd-b91d-64483ee386d3" name="Default Changelist" comment="" />
 =======
     <list default="true" id="7c2a52e5-0f5b-46cd-b91d-64483ee386d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/private/apprenant/check-log.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/private/apprenant/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/private/formateur/check-login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/private/formateur/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/panel/dashbord.phtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/panel/js/log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/tpl/cours.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/private/apprenant/list-apprenants.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/private/apprenant/list-apprenants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/MngApprenant.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/MngApprenant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/MngFormateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/libs/MngFormateur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/classroom/dashbord.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/public/classroom/dashbord.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/classroom/login.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/public/classroom/login.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/panel/tpl/dashbord.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/public/classroom/js/log.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/panel/tpl/login.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/public/panel/login.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/panel/tpl/template.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/public/panel/template.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/panel/tpl/tpl.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/public/panel/tpl.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tpl/footer.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tpl/footer.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tpl/header.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tpl/header.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tpl/home.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tpl/home.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tpl/template.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tpl/template.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/.circleci/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/build/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/build/componentWrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/build/icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/build/less.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/build/prefix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/build/publishDev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/build/release.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/build/scope.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/build/scss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/build/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/backgrounds/accordion-close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/backgrounds/accordion-open.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/backgrounds/divider-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/backgrounds/form-checkbox-indeterminate.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/backgrounds/form-checkbox.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/backgrounds/form-datalist.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/backgrounds/form-radio.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/backgrounds/form-select.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/backgrounds/list-bullet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/backgrounds/nav-parent-close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/backgrounds/nav-parent-open.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/close-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/close-large.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/marker.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/navbar-toggle-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/overlay-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/pagination-next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/pagination-previous.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/search-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/search-large.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/search-navbar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/slidenav-next-large.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/slidenav-next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/slidenav-previous-large.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/slidenav-previous.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/spinner.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/components/totop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/500px.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/album.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/arrow-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/arrow-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/arrow-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/arrow-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/ban.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/behance.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/bell.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/bold.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/bolt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/bookmark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/camera.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/chevron-double-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/chevron-double-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/chevron-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/chevron-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/chevron-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/chevron-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/cloud-download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/cloud-upload.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/code.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/cog.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/comment.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/commenting.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/comments.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/copy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/credit-card.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/database.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/desktop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/dribbble.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/etsy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/expand.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/file-edit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/file-pdf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/file-text.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/flickr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/folder.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/forward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/foursquare.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/future.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/git-branch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/git-fork.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/github-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/gitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/google-plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/google.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/grid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/happy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/hashtag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/heart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/history.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/home.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/image.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/info.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/joomla.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/laptop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/lifesaver.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/linkedin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/list.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/location.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/lock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/mail.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/microphone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/minus-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/minus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/more-vertical.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/more.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/move.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/nut.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/pagekit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/paint-bucket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/pencil.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/phone-landscape.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/pinterest.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/play-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/play.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/plus-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/print.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/pull.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/push.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/question.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/quote-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/receiver.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/reddit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/refresh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/reply.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/rss.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/server.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/settings.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/shrink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/sign-in.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/sign-out.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/social.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/soundcloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/strikethrough.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/table.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/tablet-landscape.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/tablet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/tag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/thumbnails.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/trash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/triangle-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/triangle-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/triangle-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/triangle-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/tripadvisor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/tumblr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/tv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/uikit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/unlock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/upload.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/users.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/video-camera.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/vimeo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/warning.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/whatsapp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/wordpress.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/world.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/xing.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/yelp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/images/icons/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/api/boot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/api/component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/api/global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/api/hooks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/api/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/api/instance.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/api/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/countdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/internal/lightbox-animations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/internal/slider-transitioner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/internal/slideshow-animations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/lightbox-panel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/lightbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/notification.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/parallax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/slider-parallax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/slideshow-parallax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/slideshow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/sortable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/components/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/cover.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/drop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/form-custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/gif.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/height-match.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/height-viewport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/icon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/img.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/leader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/margin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/offcanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/overflow-auto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/responsive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/scroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/scrollspy-nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/scrollspy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/sticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/svg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/switcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/toggle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/core/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/animate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/class.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/flex-bug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/internal/slideshow-animations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/internal/slideshow-transitioner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/parallax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/position.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/slider-autoplay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/slider-drag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/slider-nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/slider-reactive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/slideshow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/mixin/togglable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/uikit-core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/uikit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/animation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/attr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/class.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/dimensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/dom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/fastdom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/intersection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/lang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/mouse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/player.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/promise.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/selector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/js/util/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/_import.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/accordion.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/alert.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/align.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/animation.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/article.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/background.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/badge.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/base.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/breadcrumb.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/button.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/card.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/close.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/column.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/comment.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/container.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/countdown.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/cover.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/description-list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/divider.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/dotnav.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/drop.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/dropdown.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/flex.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/form-range.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/form.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/grid.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/heading.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/height.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/icon.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/iconnav.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/inverse.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/label.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/leader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/lightbox.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/link.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/margin.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/marker.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/mixin.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/modal.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/nav.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/navbar.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/notification.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/offcanvas.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/overlay.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/padding.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/pagination.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/placeholder.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/position.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/print.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/progress.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/search.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/section.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/slidenav.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/slider.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/slideshow.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/sortable.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/spinner.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/sticky.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/subnav.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/svg.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/switcher.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/tab.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/table.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/text.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/thumbnav.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/tile.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/tooltip.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/totop.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/transition.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/utility.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/visibility.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/components/width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/_import.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/accordion.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/alert.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/align.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/animation.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/article.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/background.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/badge.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/base.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/breadcrumb.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/button.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/card.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/close.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/column.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/comment.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/container.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/countdown.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/description-list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/divider.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/dotnav.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/drop.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/dropdown.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/form-range.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/form.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/grid.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/heading.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/height.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/icon.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/iconnav.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/inverse.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/label.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/leader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/lightbox.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/link.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/margin.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/marker.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/modal.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/nav.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/navbar.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/notification.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/offcanvas.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/overlay.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/padding.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/pagination.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/placeholder.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/position.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/progress.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/search.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/section.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/slidenav.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/sortable.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/spinner.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/sticky.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/subnav.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/tab.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/table.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/text.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/thumbnav.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/tile.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/tooltip.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/totop.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/transition.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/utility.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/theme/width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/uikit.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/less/uikit.theme.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/_import.components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/_import.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/_import.utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/accordion.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/animation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/article.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/column.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/comment.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/container.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/countdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/cover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/description-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/dotnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/drop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/form-range.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/grid-masonry.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/heading.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/height.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/icon.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/iconnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/inverse.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/label.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/leader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/lightbox.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/link.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/margin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/marker.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/mixin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/notification.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/offcanvas.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/overlay.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/padding.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/placeholder.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/search.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/section.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/slidenav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/slider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/slideshow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/sortable.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/spinner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/sticky.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/subnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/svg.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/switcher.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/tab.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/thumbnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/tile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/totop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/utility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/components/width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/mixins-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/_import.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/accordion.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/animation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/article.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/column.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/comment.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/container.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/countdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/description-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/dotnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/drop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/form-range.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/heading.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/height.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/icon.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/iconnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/inverse.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/label.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/leader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/lightbox.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/link.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/margin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/marker.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/notification.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/offcanvas.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/overlay.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/padding.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/placeholder.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/search.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/section.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/slidenav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/sortable.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/spinner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/sticky.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/subnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/tab.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/thumbnav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/tile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/totop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/utility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/theme/width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/uikit-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/uikit.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/variables-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/src/scss/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/accordion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/alert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/align.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/animation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/article.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/badge.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/breadcrumb.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/card.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/close.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/column.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/comment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/container.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/countdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/cover.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/description-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/divider.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/dotnav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/drop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/dropdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/filter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/flex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/grid-masonry.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/grid-parallax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/heading.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/height-expand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/height-viewport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/height.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/icon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/iconnav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/animated.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/dark.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/light.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/photo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/photo2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/photo3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/size-h.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/size-v.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/size1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/size2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/slider1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/slider2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/slider3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/slider4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/images/slider5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/label.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/leader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/lightbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/margin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/marker.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/modal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/nav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/notification.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/offcanvas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/overlay.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/padding.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/pagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/parallax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/placeholder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/position.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/progress.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/scroll.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/scrollspy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/section.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/slidenav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/slider.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/slideshow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/sortable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/spinner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/sticky-navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/sticky.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/subnav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/svg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/switcher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/tab.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/text.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/thumbnav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/tile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/toggle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/tooltip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/totop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/transition.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/utility.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/visibility.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/tests/width.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/uikit/yarn.lock" beforeDir="false" />
     </list>
 >>>>>>> en-cours
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -142,6 +798,7 @@
     <session id="-799329414">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -176,9 +833,13 @@
   </component>
   <component name="FileEditorManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <splitter split-orientation="horizontal" split-proportion="0.6467236">
 =======
     <splitter split-orientation="horizontal" split-proportion="0.5166192">
+>>>>>>> en-cours
+=======
+    <splitter split-orientation="horizontal" split-proportion="0.6467236">
 >>>>>>> en-cours
       <split-first>
         <splitter split-orientation="horizontal" split-proportion="0.4467005">
@@ -193,9 +854,13 @@
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="false">
+              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/.gitignore">
-                  <provider selected="true" editor-type-id="text-editor" />
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="17">
+                      <caret line="1" selection-start-line="1" selection-end-line="1" />
+                    </state>
+                  </provider>
                 </entry>
               </file>
               <file pinned="false" current-in-tab="false">
@@ -203,9 +868,13 @@
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="272">
 <<<<<<< HEAD
+<<<<<<< HEAD
                       <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
 =======
                       <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+>>>>>>> en-cours
+=======
+                      <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
 >>>>>>> en-cours
                     </state>
                   </provider>
@@ -214,6 +883,7 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/public/tpl/home.phtml">
                   <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
                     <state>
                       <caret column="58" selection-start-column="58" selection-end-column="58" />
@@ -224,6 +894,10 @@
                         <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                       </folding>
 >>>>>>> en-cours
+=======
+                    <state>
+                      <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+>>>>>>> en-cours
                     </state>
                   </provider>
                 </entry>
@@ -231,6 +905,7 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/public/tpl/header.phtml">
                   <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                     <state relative-caret-position="238">
 <<<<<<< HEAD
                       <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
@@ -240,11 +915,16 @@
                         <element signature="n#style#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
                         <element signature="n#style#0;n#a#0;n#li#4;n#ul#0;n#div#2;n#nav#0;n#header#0;n#!!top" expanded="true" />
                       </folding>
+=======
+                    <state relative-caret-position="442">
+                      <caret line="26" selection-start-line="26" selection-end-line="26" />
+>>>>>>> en-cours
                     </state>
                   </provider>
                 </entry>
               </file>
               <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
                 <entry file="file://$PROJECT_DIR$/public/panel/js/log.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="97">
@@ -273,6 +953,12 @@
                     <state relative-caret-position="180">
                       <caret line="38" column="39" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="39" />
 >>>>>>> en-cours
+=======
+                <entry file="file://$PROJECT_DIR$/libs/MngFormateur.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="448">
+                      <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+>>>>>>> en-cours
                     </state>
                   </provider>
                 </entry>
@@ -286,10 +972,14 @@
                 <entry file="file://$PROJECT_DIR$/app/private/apprenant/list-apprenants.php">
                   <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <state relative-caret-position="340">
                       <caret line="20" selection-start-line="20" selection-end-line="20" />
 =======
                     <state relative-caret-position="357">
+=======
+                    <state relative-caret-position="340">
+>>>>>>> en-cours
                       <caret line="21" selection-start-line="21" selection-end-line="21" />
 >>>>>>> en-cours
                     </state>
@@ -300,9 +990,10 @@
           </split-first>
           <split-second>
             <leaf>
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/libs/MngApprenant.php">
                   <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
                     <state relative-caret-position="231">
                       <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
@@ -310,11 +1001,20 @@
                     <state relative-caret-position="333">
                       <caret line="54" column="9" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="54" selection-end-column="9" />
 >>>>>>> en-cours
+=======
+                    <state relative-caret-position="21">
+                      <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+>>>>>>> en-cours
                       <folding>
                         <element signature="e#30#55#0#PHP" expanded="true" />
                       </folding>
                     </state>
                   </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/assets/uikit/dist/js/uikit.js">
+                  <provider selected="true" editor-type-id="text-editor" />
                 </entry>
               </file>
               <file pinned="false" current-in-tab="false">
@@ -326,9 +1026,12 @@
 =======
                     <state relative-caret-position="252">
                       <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+<<<<<<< HEAD
                       <folding>
                         <element signature="e#1986#2015#0#PHP" />
                       </folding>
+>>>>>>> en-cours
+=======
 >>>>>>> en-cours
                     </state>
                   </provider>
@@ -344,6 +1047,7 @@
                 </entry>
               </file>
               <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <entry file="file://$PROJECT_DIR$/public/tpl/footer.phtml">
                   <provider selected="true" editor-type-id="text-editor">
@@ -380,6 +1084,12 @@
                     <state>
                       <caret column="14" selection-start-column="14" selection-end-column="14" />
 >>>>>>> en-cours
+=======
+                <entry file="file://$PROJECT_DIR$/public/tpl/footer.phtml">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="51">
+                      <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+>>>>>>> en-cours
                     </state>
                   </provider>
                 </entry>
@@ -406,16 +1116,21 @@
                 <entry file="file://$PROJECT_DIR$/app/private/apprenant/list-apprenants.php">
                   <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <state relative-caret-position="119">
                       <caret line="7" selection-start-line="7" selection-end-line="7" />
 =======
                     <state relative-caret-position="136">
+=======
+                    <state relative-caret-position="119">
+>>>>>>> en-cours
                       <caret line="8" selection-start-line="8" selection-end-line="8" />
 >>>>>>> en-cours
                     </state>
                   </provider>
                 </entry>
               </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/public/classroom/login.phtml">
@@ -426,10 +1141,13 @@
                         <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
 =======
               <file pinned="false" current-in-tab="false">
+=======
+              <file pinned="false" current-in-tab="true">
+>>>>>>> en-cours
                 <entry file="file://$PROJECT_DIR$/public/classroom/login.phtml">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="77">
-                      <caret line="60" column="6" lean-forward="true" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
+                    <state relative-caret-position="476">
+                      <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
                       <folding>
                         <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                         <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -439,6 +1157,7 @@
                   </provider>
                 </entry>
               </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
               <file pinned="false" current-in-tab="true">
@@ -469,10 +1188,13 @@
                 </entry>
               </file>
 >>>>>>> en-cours
+=======
+>>>>>>> en-cours
             </leaf>
           </split-first>
           <split-second>
             <leaf>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/public/classroom/dashbord.phtml">
@@ -489,20 +1211,18 @@
                   </provider>
                 </entry>
               </file>
+=======
+>>>>>>> en-cours
               <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/app/private/apprenant/login.php">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="9">
-                      <caret line="10" lean-forward="true" selection-end-line="43" selection-end-column="26" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/public/classroom/dashbord.phtml">
                   <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                     <state relative-caret-position="34">
                       <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+>>>>>>> en-cours
+=======
+                    <state>
+                      <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
 >>>>>>> en-cours
                     </state>
                   </provider>
@@ -574,10 +1294,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/assets/uikit/package.json" />
-    </packageJsonPaths>
+  <component name="PhpTemplates">
+    <option name="NEW_PHP_FILE_LAST_EXTENSION" value="phtml" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -658,9 +1376,17 @@
             <path>
               <item name="Elearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="Elearning" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="classroom" type="462c0819:PsiDirectoryNode" />
 =======
+=======
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Elearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Elearning" type="462c0819:PsiDirectoryNode" />
+>>>>>>> en-cours
               <item name="libs" type="462c0819:PsiDirectoryNode" />
 >>>>>>> en-cours
             </path>
@@ -714,13 +1440,13 @@
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\DevApp\Elearning\public\panel" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\DevApp\API_v1\assets\js" />
       <recent name="F:\DevApp\API_v1\assets\css" />
       <recent name="F:\DevApp\API_v1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\DevApp\Elearning\public\panel" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -753,14 +1479,17 @@
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="21351000" />
 =======
     <option name="totallyTimeSpent" value="42080000" />
 >>>>>>> en-cours
+=======
+    <option name="totallyTimeSpent" value="42314000" />
+>>>>>>> en-cours
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
 <<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20347957" />
@@ -898,7 +1627,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/private/apprenant/test.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -909,8 +1642,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/private/apprenant/list-apprenants.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="340">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -926,8 +1659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/classroom/dashbord.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state>
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -951,17 +1684,14 @@
     <entry file="file://$PROJECT_DIR$/public/tpl/template.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/tpl/home.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state>
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -979,6 +1709,7 @@
     <entry file="file://$PROJECT_DIR$/public/tpl/header.phtml">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="101">
           <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
 =======
@@ -989,17 +1720,26 @@
             <element signature="n#style#0;n#a#0;n#li#4;n#ul#0;n#div#2;n#nav#0;n#header#0;n#!!top" expanded="true" />
           </folding>
 >>>>>>> en-cours
+=======
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+>>>>>>> en-cours
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/classroom/login.phtml">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="235">
           <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
 =======
         <state relative-caret-position="77">
           <caret line="60" column="6" lean-forward="true" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
+=======
+        <state relative-caret-position="476">
+          <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+>>>>>>> en-cours
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1025,6 +1765,7 @@
     <entry file="file://$PROJECT_DIR$/public/tpl/footer.phtml">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="85">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
 =======
@@ -1033,6 +1774,10 @@
           <folding>
             <element signature="e#679#685#1#HTML" expanded="true" />
           </folding>
+>>>>>>> en-cours
+=======
+        <state relative-caret-position="51">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
 >>>>>>> en-cours
         </state>
       </provider>
@@ -1076,15 +1821,19 @@
 =======
         <state relative-caret-position="252">
           <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+<<<<<<< HEAD
           <folding>
             <element signature="e#1986#2015#0#PHP" />
           </folding>
+>>>>>>> en-cours
+=======
 >>>>>>> en-cours
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/MngApprenant.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="272">
           <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
@@ -1115,6 +1864,10 @@
 =======
         <state relative-caret-position="333">
           <caret line="54" column="9" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="54" selection-end-column="9" />
+=======
+        <state relative-caret-position="21">
+          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+>>>>>>> en-cours
           <folding>
             <element signature="e#30#55#0#PHP" expanded="true" />
           </folding>
@@ -1123,8 +1876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/MngFormateur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="38" column="39" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="39" />
+        <state relative-caret-position="448">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
         </state>
       </provider>
     </entry>
