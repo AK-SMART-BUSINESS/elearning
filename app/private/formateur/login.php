@@ -15,22 +15,28 @@ $app = new \Core\Libs\MngFormateur();
 if (isset($_POST) && !empty($_POST)){
     $email_formateur = htmlentities($_POST['email']);
     $password_form = $_POST['password'];
-    $apprenant = $app->getFormateurByEmail($email_formateur);
-    if ($apprenant){
-
-        $saved_password = $apprenant->mdp_app;
-        if ($password_form == $saved_password){
-            $result['success'] = true;
-            $result['message'] = "<b>Accèss autorisé !</b><br>Vous êtes connecté.";
-            $result['data'] = $apprenant;
-            $_SESSION['uid'] = $apprenant->id_app;
-            $_SESSION['uemail'] = $apprenant->email_app;
-            $_SESSION['user'] = $apprenant->pseudo_app;
+    $formateur = $app->getFormateurByEmail($email_formateur);
+    if ($formateur){
+        if ($formateur->status_form == 'enable'){
+            $saved_password = $formateur->mdp_form;
+            if ($password_form == $saved_password){
+                $result['success'] = true;
+                $result['message'] = "<b>Accèss autorisé !</b><br>Vous êtes connecté.";
+                $result['data'] = $formateur;
+                $_SESSION['frm_uid'] = $formateur->id_form;
+                $_SESSION['uemail'] = $formateur->email_form;
+                $_SESSION['user'] = $formateur->pseudo_form;
+            }else{
+                $result['success'] = false;
+                $result['message'] = '<b>Accès réfuser !</b><br>Mot de passe incorrect';
+                $result['data'] = $app->getErrorMsg();
+            }
         }else{
             $result['success'] = false;
-            $result['message'] = '<b>Accès réfuser !</b><br>Mot de passe incorrect';
+            $result['message'] = '<b>Accès réfuser !</b><br>Veuillez vous connecter à votre mail pour activer votre compte ou contacter votre administrateur';
             $result['data'] = $app->getErrorMsg();
         }
+
     }else{
         $result['success'] = false;
         $result['message'] = '<b>Accès réfuser !</b><br>Ce compte n\'existe pas';

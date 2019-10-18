@@ -14,6 +14,11 @@ class MngFormation extends Database implements FormationInt
         // TODO: Implement addFormation() method.
     }
 
+    public function getFormations()
+    {
+        // TODO: Implement getFormations() method.
+    }
+
     public function getApprenants()
     {
         $sql = "SELECT * FROM formation";
