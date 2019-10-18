@@ -1,15 +1,26 @@
-<nav class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-left">
-        <ul class="uk-navbar-nav">
-            <li><a href="<?= URL; ?>">Accueil</a></li>
-            <li><a href="<?= URL.'cours'; ?>">Cours</a></li>
-        </ul>
-    </div>
-    <div class="uk-navbar-center"></div>
-    <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav">
-            <li><a href="<?= URL.'connexion'; ?>">Connexion</a></li>
-            <li><a href="<?= URL.'inscription'; ?>">Inscription</a></li>
-        </ul>
-    </div>
-</nav>
+<header class="uk-position-fixed uk-position-top uk-width-1-1@m uk-position-z-index">
+    <nav class="uk-navbar-container" uk-navbar style="background: #fff">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a href="<?= URL; ?>">HIECI CLASSROOM</a></li>
+                <!--            <li><a href="--><?//= URL.'cours'; ?><!--">Cours</a></li>-->
+            </ul>
+        </div>
+        <div class="uk-navbar-center">
+
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a href="<?= URL.'catalogue'; ?>" class="uk-button uk-button-small uk-button-link">Catalogue</a></li>
+                <?php if(isset($_SESSION['uid']) && !empty($_SESSION['uid'])): ?>
+                    <li><a href="<?= URL.'classroom/'; ?>">Aller au cours</a></li>
+                    <li><a href="<?= URL.'logout'; ?>">Quitter</a></li>
+                <?php else: ?>
+                    <li><a href="<?= URL.'classroom/'; ?>" class="uk-button uk-button-small uk-button-link">Connexion</a></li>
+                    <li><a href="<?= URL.'inscription'; ?>" class="uk-button uk-button-small uk-button-danger" style="color: #fff">Inscription</a></li>
+                <?php endif; ?>
+            </ul>
+        </div>
+    </nav>
+    <hr class="uk-margin-remove">
+</header>

@@ -13,6 +13,7 @@ class Application
    */
     public function __construct()
     {
+        session_start();
         /*if (!Session::sessionExist()) {
           header("location: login.php");
           exit();
@@ -43,7 +44,7 @@ class Application
       
       if (isset($_GET["url"]) && preg_match('/panel/', $_GET["url"])) {
         
-        if (!isset($_SESSION['admin'])) {
+        if (!isset($_SESSION['frm_uid'])) {
           $this->action = "log";
         }else {
           $url = trim($this->url,'/');
@@ -92,33 +93,34 @@ class Application
         // $this->url_params = !empty($url) ? $url : [];
         // unset($url);
       }elseif (isset($_GET["url"]) && preg_match('/classroom/', $_GET["url"]) ) {
-        if (!isset($_SESSION['user'])) {
-          $this->action = "connexion";
-        }else {
-          $url = trim($this->url,'/');
-          $url = explode('/', $url);
-          unset($url[0]);
-          if (empty($url)) {
-            $this->action = "dashboard";
-          }else {
-            $action = $url[1];
-          
-            $action = explode('-',$action);
-            
-            if (count($action) == 1) {
-              $this->action = $action[0];
+        if (isset($_SESSION['uid']) && !empty($_SESSION['uid'])) {
+            $url = trim($this->url,'/');
+            $url = explode('/', $url);
+            unset($url[0]);
+            if (empty($url)) {
+                $this->action = "dashboard";
             }else {
-              $this->action = $action[0];
-              for ($i=1; $i < count($action); $i++) { 
-                $this->action .= ucfirst($action[$i]);
-              }
-            }
-          }
-          
-          unset($url[1]);
-          $this->url_params = !empty($url) ? $url : [];
+                $action = $url[1];
 
-          unset($url);
+                $action = explode('-',$action);
+
+                if (count($action) == 1) {
+                    $this->action = $action[0];
+                }else {
+                    $this->action = $action[0];
+                    for ($i=1; $i < count($action); $i++) {
+                        $this->action .= ucfirst($action[$i]);
+                    }
+                }
+            }
+
+            unset($url[1]);
+            $this->url_params = !empty($url) ? $url : [];
+
+            unset($url);
+
+        }else {
+            $this->action = "connexion";
         }
       } else {
         if ($this->url == "") {

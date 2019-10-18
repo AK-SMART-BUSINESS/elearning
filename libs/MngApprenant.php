@@ -36,4 +36,29 @@ class MngApprenant extends Database implements ApprenantInt
         // TODO: Implement getApprenant() method.
     }
 
+    public function getApprenantByEmail($email_app)
+    {
+        $sql = 'SELECT * FROM apprenant WHERE email_app=?';
+        try{
+            if ($email_app != ""){
+                $request = $this->getDb()->prepare($sql);
+                $request->execute([$email_app]);
+                $result = $request->fetch();
+                $request->closeCursor();
+                return $result;
+            }else{
+                throw new \Exception('Erreur : Paramètre email manquant !');
+            }
+        }catch (\PDOException $e){
+            $this->setErrorMsg($e->getMessage());
+            return false;
+        }
+
+    }
+
+    public function test()
+    {
+        return 'Ok';
+    }
+
 }

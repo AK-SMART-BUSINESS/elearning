@@ -14,13 +14,18 @@ class MngFormateur extends Database implements FormateurInt
         // TODO: Implement addFormateur() method.
     }
 
-    public function getFormateur()
+    public function getFormateurs()
     {
-        $sql = "SELECT * FROM formateur";
+        // TODO: Implement getFormateurs() method.
+    }
+
+    public function getFormateur($id_formateur)
+    {
+        $sql = "SELECT * FROM formateur=?";
 
         try{
             $request = $this->getDb()->prepare($sql);
-            $request->execute();
+            $request->execute([$id_formateur]);
             //return $result;
             $result = $request->fetchAll();
             $request->closeCursor();
@@ -31,9 +36,22 @@ class MngFormateur extends Database implements FormateurInt
         }
     }
 
-    public function getFormation($id_formation)
+    public function getFormateurByEmail($email_form)
     {
-        // TODO: Implement getFormation() method.
+        $sql = 'SELECT * FROM apprenant WHERE email_form=?';
+        try{
+            if ($email_form != ""){
+                $request = $this->getDb()->prepare($sql);
+                $request->execute([$email_form]);
+                $result = $request->fetch();
+                $request->closeCursor();
+                return $result;
+            }else{
+                throw new \Exception('Erreur : Paramètre email manquant !');
+            }
+        }catch (\PDOException $e){
+            $this->setErrorMsg($e->getMessage());
+            return false;
+        }
     }
-
 }
