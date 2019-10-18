@@ -17,20 +17,30 @@ if (isset($_POST) && !empty($_POST)){
     $password_apprenant = $_POST['password'];
     $apprenant = $app->getApprenantByEmail($email_apprenant);
     if ($apprenant){
-
-        $saved_password = $apprenant->mdp_app;
-        if ($password_apprenant == $saved_password){
-            $result['success'] = true;
-            $result['message'] = "<b>Accèss autorisé !</b><br>Vous êtes connecté.";
-            $result['data'] = $apprenant;
-            $_SESSION['uid'] = $apprenant->id_app;
-            $_SESSION['uemail'] = $apprenant->email_app;
-            $_SESSION['user'] = $apprenant->pseudo_app;
+        if ($apprenant->status_app == 'enable'){
+            $saved_password = $apprenant->mdp_app;
+            if ($password_apprenant == $saved_password){
+                $result['success'] = true;
+                $result['message'] = "<b>Accèss autorisé !</b><br>Vous êtes connecté.";
+                $result['data'] = $apprenant;
+                $_SESSION['uid'] = $apprenant->id_app;
+                $_SESSION['uemail'] = $apprenant->email_app;
+                $_SESSION['user'] = $apprenant->pseudo_app;
+            }else{
+                $result['success'] = false;
+                $result['message'] = '<b>Accès réfuser !</b><br>Mot de passe incorrect';
+                $result['data'] = $app->getErrorMsg();
+            }
         }else{
             $result['success'] = false;
+<<<<<<< HEAD
             $result['message'] = '<b>Accès réfusé !</b><br>Mot de passe incorrect';
+=======
+            $result['message'] = '<b>Accès réfuser !</b><br>Veuillez vous connecter à votre mail pour activer votre compte';
+>>>>>>> 51ec3984a91cbc4956778b925fe2e424ccf1ff21
             $result['data'] = $app->getErrorMsg();
         }
+
     }else{
         $result['success'] = false;
         $result['message'] = '<b>Accès réfusé !</b><br>Ce compte n\'existe pas';

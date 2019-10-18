@@ -1,5 +1,5 @@
 $(function () {
-    $.get("app/private/formateur/check-log.php", function (res) {
+    $.get("app/private/formateur/check-login.php", function (res) {
         console.log(res)
         if (res.success){
             window.location.replace(location.href+'/dashbord');
@@ -35,7 +35,7 @@ $("#btnLog").click(function (e) {
         $.post("app/private/formateur/login.php", data, function (res) {
             console.log(res)
             if (res.success){
-                window.location.replace(location.href+'/dashboard')
+                window.location.replace(location.href+'dashboard')
             } else {
                 $("#logMessage").html(res.message)
                 $("#logMessage").fadeIn()

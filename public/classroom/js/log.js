@@ -35,7 +35,7 @@ $("#btnLog").click(function (e) {
         $.post("app/private/apprenant/login.php", data, function (res) {
             console.log(res)
             if (res.success){
-                window.location.replace(location.href+'/dashboard')
+                window.location.replace(location.href+'dashboard')
             } else {
                 $("#logMessage").html(res.message)
                 $("#logMessage").fadeIn()

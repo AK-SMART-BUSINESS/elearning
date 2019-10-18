@@ -15,8 +15,20 @@
                 <?php if(isset($_SESSION['uid']) && !empty($_SESSION['uid'])): ?>
                     <li><a href="<?= URL.'classroom/'; ?>">Aller au cours</a></li>
                     <li><a href="<?= URL.'logout'; ?>">Quitter</a></li>
+                <?php elseif(isset($_SESSION['frm_id']) && !empty($_SESSION['frm_id'])): ?>
+                    <li><a href="<?= URL.'panel/'; ?>">Aller au cours</a></li>
+                    <li><a href="<?= URL.'logout'; ?>">Quitter</a></li>
                 <?php else: ?>
-                    <li><a href="<?= URL.'classroom/'; ?>" class="uk-button uk-button-small uk-button-link">Connexion</a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="uk-button uk-button-small uk-button-link">Connexion</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="<?= URL.'classroom/'; ?>">Espace Etudiant</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="<?= URL.'panel/'; ?>">Espace Formateur</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="<?= URL.'inscription'; ?>" class="uk-button uk-button-small uk-button-danger" style="color: #fff">Inscription</a></li>
                 <?php endif; ?>
             </ul>

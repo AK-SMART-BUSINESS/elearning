@@ -38,7 +38,7 @@ class MngFormateur extends Database implements FormateurInt
 
     public function getFormateurByEmail($email_form)
     {
-        $sql = 'SELECT * FROM apprenant WHERE email_form=?';
+        $sql = 'SELECT * FROM formateur WHERE email_form=?';
         try{
             if ($email_form != ""){
                 $request = $this->getDb()->prepare($sql);
