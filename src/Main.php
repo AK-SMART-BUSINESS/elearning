@@ -40,13 +40,13 @@ class Main
     require "public/tpl/template.phtml";
   }
 
-  // public function connexion()
-  // {
-  //   ob_start();
-  //   require "public/tpl/signin.phtml";
-  //     $output = ob_get_clean();
-  //   require "public/tpl/template.phtml";
-  // }
+    public function catalogue()
+    {
+        ob_start();
+        require "public/tpl/cours.phtml";
+        $output = ob_get_clean();
+        require "public/tpl/template.phtml";
+    }
 
   public function inscription()
   {
@@ -62,9 +62,9 @@ class Main
     public function log()
     {
         ob_start();
-        require "public/panel/tpl/login.phtml";
+        require "public/panel/login.phtml";
         $output = ob_get_clean();
-        require "public/panel/tpl/tpl.phtml";
+        require "public/panel/tpl.phtml";
     }
     public function classroom()
     {
@@ -72,6 +72,13 @@ class Main
         require "public/panel/tpl/dashbord.phtml";
         $output = ob_get_clean();
         require "public/panel/tpl/tpl.phtml";
+    }
+
+    public function logoutAdmin()
+    {
+        \App\Session::killSession("uid");
+        session_destroy();
+        header('location: '.URL.'panel');
     }
 
   /*--------------------------------------------------------*/
@@ -95,7 +102,7 @@ class Main
 
 
 
-    public function signout()
+    public function logout()
     {
         \App\Session::killSession("uid");
         session_destroy();
