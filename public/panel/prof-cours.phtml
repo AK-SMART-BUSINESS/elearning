@@ -1,0 +1,49 @@
+<h1 class="uk-text-primary">Cours</h1>
+<div class="uk-panel">
+    <ul uk-tab>
+        <li class="uk-active"><a href="<?= URL.'panel/cours/liste'; ?>">Cours enregistrés</a></li>
+        <li><a href="<?= URL.'panel/cours/ajout'; ?>">Ajouter un cours</a></li>
+    </ul>
+    <ul class="uk-switcher">
+        <li>
+            <div>
+                <h4>Mes cours</h4>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h4>Nouveau cours</h4>
+                <form>
+                    <div class="uk-margin">
+                        <label for="" class="uk-form-label">Intitulé du cours</label>
+                        <input type="text" class="uk-input"> 
+                    </div>
+                    <div class="uk-margin">
+                        <label for="" class="uk-form-label">Courte description</label>
+                        <textarea name="" id="" class="uk-textarea"></textarea> 
+                    </div>
+                    <div class="uk-margin">
+                        <label for="" class="uk-form-label">Préréquis</label>
+                        <textarea name="" id="" class="uk-textarea"></textarea> 
+                    </div>
+                    <div>
+                        Nombre de chapitre: 
+                        <div class="uk-inline">
+                            <input type="number" class="uk-input uk-form-width-small">
+                        </div>
+
+                        Durrée estimée à : 
+                        <div class="uk-inline">
+                            <input type="number" class="uk-input uk-form-width-small">
+                        </div>
+                        <select name="" id="" class="uk-select uk-form-width-small">
+                            <option value="heure">Heure(s)</option>
+                            <option value="jour">Jour(s)</option>
+                            <option value="semain">Semaine(s)</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </li>
+    </ul>
+</div>

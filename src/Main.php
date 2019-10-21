@@ -57,7 +57,7 @@ class Main
   }
 
   /*--------------------------------------------------------*/
-  #########             ADMIN PANEL              ############
+  #########      PRO PANEL (Section prof)      ############
   /*--------------------------------------------------------*/
     public function log()
     {
@@ -66,12 +66,34 @@ class Main
         $output = ob_get_clean();
         require "public/panel/tpl.phtml";
     }
-    public function classroom()
+    public function dash()
+    {
+        ob_start(); 
+        require "public/panel/dashbord.phtml";
+        $output = ob_get_clean();
+        require "public/panel/template.phtml";
+    }
+    public function cours()
     {
         ob_start();
-        require "public/panel/tpl/dashbord.phtml";
+        if (file_exists(("public/panel/prof-cours.phtml"))) { 
+          require "public/panel/prof-cours.phtml";
+        } else {
+          $this->displayError("La page cours n'existe pas !");
+        }
         $output = ob_get_clean();
-        require "public/panel/tpl/tpl.phtml";
+        require "public/panel/template.phtml";
+    }
+    public function devoirs()
+    {
+        ob_start();
+        if (file_exists(("public/panel/prof-devoirs.phtml"))) { 
+          require "public/panel/prof-devoirs.phtml";
+        } else {
+          $this->displayError("La page cours n'existe pas !");
+        }
+        $output = ob_get_clean();
+        require "public/panel/template.phtml";
     }
 
     public function logoutAdmin()
@@ -82,7 +104,7 @@ class Main
     }
 
   /*--------------------------------------------------------*/
-  #########             CLASSROOM PANEL              #########
+  #########    CLASSROOM PANEL (Section Etudiant)    #########
   /*--------------------------------------------------------*/
   public function connexion()
   {
@@ -99,8 +121,60 @@ class Main
       require "public/classroom/tpl.phtml";
   }
 
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
 
 
+  /*--------------------------------------------------------*/
+  #########    ADMIN PANEL (Section administrateur)    #########
+  /*--------------------------------------------------------*/
+  public function loginService()
+  {
+      // ob_start();
+      require "public/admin/login.phtml";
+      // $output = ob_get_clean();
+      // require "puplic/classroom/tpl.phtml";
+  }
+  public function adDashboard()
+  {
+      ob_start();
+      require "public/admin/dashbord.phtml";
+      $output = ob_get_clean();
+      require "public/admin/template.phtml";
+  }
+  public function adFormations()
+  {
+      ob_start();
+      require "public/admin/formations.phtml";
+      $output = ob_get_clean();
+      require "public/admin/template.phtml";
+  }
+  public function adFormateurs()
+  {
+      ob_start();
+      require "public/admin/formateurs.phtml";
+      $output = ob_get_clean();
+      require "public/admin/template.phtml";
+  }
+  public function adEtudiants()
+  {
+      ob_start();
+      require "public/admin/etudiants.phtml";
+      $output = ob_get_clean();
+      require "public/admin/template.phtml";
+  }
+  public function adCompte()
+  {
+      ob_start();
+      require "public/admin/compte.phtml";
+      $output = ob_get_clean();
+      require "public/admin/template.phtml";
+  }
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
 
     public function logout()
     {
@@ -117,5 +191,11 @@ class Main
         return $this->params;
     }
 
-
+    private function displayError($error_text)
+    {
+      $html = '<div class="uk-alert uk-alert-danger">
+                <p>'.$error_text.'</p>
+              </div>';
+      echo $html;
+    }
 }

@@ -1,8 +1,8 @@
 $(function () {
-    $.get("app/.private/apprenant/check-log.php", function (res) {
+    $.get("app/.private/admin/check-login.php", function (res) {
         console.log(res)
         if (res.success){
-            window.location.replace(location.href+'/dashbord');
+            window.location.replace(location.href+'/ad-dashboard');
         }
     })
 })
@@ -32,10 +32,10 @@ $("#btnLog").click(function (e) {
         $("#logMessage").html(output)
         $("#logMessage").fadeIn()
     } else {
-        $.post("app/.private/apprenant/login.php", data, function (res) {
+        $.post("app/.private/admin/log.php", data, function (res) {
             console.log(res)
             if (res.success){
-                window.location.replace(location.href+'dashboard')
+                window.location.replace(location.href+'/ad-dashboard')
             } else {
                 $("#logMessage").html(res.message)
                 $("#logMessage").fadeIn()

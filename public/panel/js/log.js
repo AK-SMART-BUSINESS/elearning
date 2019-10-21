@@ -1,8 +1,8 @@
 $(function () {
-    $.get("app/private/formateur/check-login.php", function (res) {
+    $.get("app/.private/formateur/check-login.php", function (res) {
         console.log(res)
         if (res.success){
-            window.location.replace(location.href+'/dashbord');
+            window.location.replace(location.href+'/dash');
         }
     })
 })
@@ -32,10 +32,10 @@ $("#btnLog").click(function (e) {
         $("#logMessage").html(output)
         $("#logMessage").fadeIn()
     } else {
-        $.post("app/private/formateur/login.php", data, function (res) {
+        $.post("app/.private/formateur/login.php", data, function (res) {
             console.log(res)
             if (res.success){
-                window.location.replace(location.href+'dashboard')
+                window.location.replace(location.href+'dash')
             } else {
                 $("#logMessage").html(res.message)
                 $("#logMessage").fadeIn()

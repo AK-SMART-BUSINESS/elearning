@@ -31,17 +31,7 @@ class Application
    */
     private function configuration(){
 
-      // if (isset($_GET['url']) && preg_match('/panel/')) {
-      //   echo 'panel';
-      // } elseif (isset($_GET['url']) && preg_match('/classroom/')) {
-      //   echo 'classroom';
-      // }
-      // else {
-      //   echo 'public';
-      // }
-      
-
-      
+      // Partie enseignant
       if (isset($_GET["url"]) && preg_match('/panel/', $_GET["url"])) {
         
         if (!isset($_SESSION['frm_uid'])) {
@@ -51,7 +41,7 @@ class Application
           $url = explode('/', $url);
           unset($url[0]);
           if (empty($url)) {
-            $this->action = "dashboard";
+            $this->action = "dash";
           }else {
             $action = $url[1];
           
@@ -72,27 +62,9 @@ class Application
 
           unset($url);
         }
-        // $url = trim($this->url,'/');
-        // $url = explode('/', $url);
-        // unset($url[0]);
-        
-        // $action = $url[1];
-        
-        // $action = explode('-',$action);
-       
-        // if (count($action) == 1) {
-        //   $this->action = $action[0];
-        // }else {
-        //   $this->action = $action[0];
-        //   for ($i=1; $i < count($action); $i++) { 
-        //     $this->action .= ucfirst($action[$i]);
-        //   }
-        // }
-        // unset($url[0]);
-        // unset($url[1]);
-        // $this->url_params = !empty($url) ? $url : [];
-        // unset($url);
-      }elseif (isset($_GET["url"]) && preg_match('/classroom/', $_GET["url"]) ) {
+      }
+      // Partie étudiant
+      elseif (isset($_GET["url"]) && preg_match('/classroom/', $_GET["url"]) ) {
         if (isset($_SESSION['uid']) && !empty($_SESSION['uid'])) {
             $url = trim($this->url,'/');
             $url = explode('/', $url);
@@ -122,7 +94,41 @@ class Application
         }else {
             $this->action = "connexion";
         }
-      } else {
+      }
+      // Partie administrateur
+      elseif (isset($_GET["url"]) && preg_match('/admin/', $_GET["url"]) ) {
+        if (isset($_SESSION['admin_uid']) && !empty($_SESSION['admin_uid'])) {
+            $url = trim($this->url,'/');
+            $url = explode('/', $url);
+            unset($url[0]);
+            if (empty($url)) {
+                $this->action = "ad-dashboard";
+            }else {
+                $action = $url[1];
+
+                $action = explode('-',$action);
+
+                if (count($action) == 1) {
+                    $this->action = $action[0];
+                }else {
+                    $this->action = $action[0];
+                    for ($i=1; $i < count($action); $i++) {
+                        $this->action .= ucfirst($action[$i]);
+                    }
+                }
+            }
+
+            unset($url[1]);
+            $this->url_params = !empty($url) ? $url : [];
+
+            unset($url);
+
+        }else {
+            $this->action = "loginService";
+        }
+      } 
+      // Partie publique
+      else {
         if ($this->url == "") {
           $this->action = "accueil";  
         }else {

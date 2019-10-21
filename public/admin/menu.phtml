@@ -1,0 +1,50 @@
+        <div class="uk-text-center">
+            <a href="" class="uk-width-1-1 uk-button uk-button-large">
+                <div>
+                    <span class="uk-icon-button" uk-icon="icon: user; ratio: 2"></span>
+                </div>
+                <h5 class="uk-margin-remove" style="color: 3fff"><?= $_SESSION['user']; ?></h5>
+            </a> 
+        </div>
+        <hr class="uk-divider-icon">
+        <div class="uk-background-secondary">
+            <ul class="uk-nav uk-nav-secondary uk-nav-parent-icon" uk-nav>
+                <!-- <li class="uk-active"><a href="#">Active</a></li>
+                <li class="uk-parent">
+                    <a href="#">Parent</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">Sub item</a></li>
+                    </ul>
+                </li>
+                <li class="uk-parent">
+                    <a href="#">Parent</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">Sub item</a></li>
+                    </ul>
+                </li> -->
+                <li class="uk-active"><a href="<?= URL.'admin/'; ?>"><span class="uk-margin-small-right" uk-icon="icon: home"></span> TABLEAU DE BORD</a></li>
+                <li class="uk-nav-divider"></li>
+                <li class="uk-nav-header">Menu</li>
+                <li><a href="<?= URL.'admin/ad-formations'; ?>"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Formations</a></li>
+                <!-- <li><a href="<?= URL.'admin/devoirs'; ?>"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Mes devoirs</a></li> -->
+                <!-- <li class="uk-nav-divider"></li> -->
+                <hr>
+                <li><a href="<?= URL.'admin/ad-formateurs'; ?>"><span class="uk-margin-small-right" uk-icon="icon: users"></span> Formateurs</a></li>
+                <li><a href="<?= URL.'admin/ad-etudiants'; ?>"><span class="uk-margin-small-right" uk-icon="icon: users"></span> Etudiants</a></li>
+                <hr>
+                <li><a href="<?= URL.'admin/ad-compte'; ?>"><span class="uk-margin-small-right" uk-icon="icon: settings"></span> Mon compte</a></li>
+            </ul>
+        </div>
+
+        <div class="uk-position-bottom">
+            <ul class="uk-nav uk-nav-parent-icon" uk-nav>
+                <li class=""><a href="<?= URL.'logout'; ?>"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Déconnexion</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="<?= URL; ?>"><span class="uk-margin-small-right" uk-icon="icon: world"></span> Aller au site</a></li>
+                <li><a href="#">Condition d'utilisation</a></li>
+            </ul>
+            <hr>
+            <p>@copyright Octobre 2019</p>
+        </div>
