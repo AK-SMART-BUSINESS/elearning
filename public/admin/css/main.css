@@ -1,1 +1,5 @@
 /* html, body{margin: 0;padding: 0;} */
+#rightNav li.uk-active a{
+    background: #eee;
+    font-weight: bold;
+}

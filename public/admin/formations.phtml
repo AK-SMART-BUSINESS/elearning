@@ -1,3 +1,62 @@
 <h1 class="uk-heading-line uk-text-left">
 <span>Gestion des formations</span>
 </h1>
+<div>
+        <div uk-grid>
+            <div class="uk-width-auto@m uk-flex-last@m" id="rightNav">
+                <ul class="uk-tab-right" uk-tab="connect: #component-tab-right; animation: uk-animation-fade">
+                    <li><a href="#">Formations enregistrées</a></li>
+                    <li><a href="#">Ajouter une formation</a></li>
+                    <li><a href="#">Paramètre</a></li>
+                </ul>
+            </div>
+            <div class="uk-width-expand@m">
+                <ul id="component-tab-right" class="uk-switcher">
+                    <li>
+                        <div>
+                            <h4>Toutes les formations</h4>
+                            <div class="uk-alert uk-alert-danger" uk-alert>
+                                <p>Pas de formation enregistrée</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Ajouter un nouveau module de formation</h4>
+                        <div>
+                            <form>
+                                <div class="uk-margin">
+                                    <label for="" class="uk-form-label">Intitulé du cours</label>
+                                    <input type="text" class="uk-input"> 
+                                </div>
+                                <div class="uk-margin">
+                                    <label for="" class="uk-form-label">Courte description</label>
+                                    <textarea name="" id="" class="uk-textarea"></textarea> 
+                                </div>
+                                <div class="uk-margin">
+                                    <label for="" class="uk-form-label">Préréquis</label>
+                                    <textarea name="" id="" class="uk-textarea"></textarea> 
+                                </div>
+                                <div>
+                                    Nombre de chapitre: 
+                                    <div class="uk-inline">
+                                        <input type="number" class="uk-input uk-form-width-small">
+                                    </div>
+
+                                    Durrée estimée à : 
+                                    <div class="uk-inline">
+                                        <input type="number" class="uk-input uk-form-width-small">
+                                    </div>
+                                    <select name="" id="" class="uk-select uk-form-width-small">
+                                        <option value="heure">Heure(s)</option>
+                                        <option value="jour">Jour(s)</option>
+                                        <option value="semain">Semaine(s)</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
+                </ul>
+            </div>
+        </div>
+</div>
