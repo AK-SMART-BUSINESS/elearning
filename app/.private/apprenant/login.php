@@ -33,11 +33,7 @@ if (isset($_POST) && !empty($_POST)){
             }
         }else{
             $result['success'] = false;
-<<<<<<< HEAD
-            $result['message'] = '<b>Accès réfusé !</b><br>Mot de passe incorrect';
-=======
-            $result['message'] = '<b>Accès réfuser !</b><br>Veuillez vous connecter à votre mail pour activer votre compte';
->>>>>>> 51ec3984a91cbc4956778b925fe2e424ccf1ff21
+            $result['message'] = '<b>Accès réfuser !</b><br />Veuillez vous connecter à votre mail pour activer votre compte';
             $result['data'] = $app->getErrorMsg();
         }
 
