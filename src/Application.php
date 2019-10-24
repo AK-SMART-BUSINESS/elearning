@@ -97,36 +97,68 @@ class Application
       }
       // Partie administrateur
       elseif (isset($_GET["url"]) && preg_match('/admin/', $_GET["url"]) ) {
-        if (isset($_SESSION['admin_uid']) && !empty($_SESSION['admin_uid'])) {
-            $url = trim($this->url,'/');
-            $url = explode('/', $url);
-            unset($url[0]);
-            if (empty($url)) {
-                $this->action = "ad-dashboard";
-            }else {
-                $action = $url[1];
+//        if (isset($_SESSION['admin_uid']) && !empty($_SESSION['admin_uid'])) {
+//            $url = trim($this->url,'/');
+//            $url = explode('/', $url);
+//            unset($url[0]);
+//            if (empty($url)) {
+//                $this->action = "ad-dashboard";
+//            }else {
+//                $action = $url[1];
+//
+//                $action = explode('-',$action);
+//
+//                if (count($action) == 1) {
+//                    $this->action = $action[0];
+//                }else {
+//                    $this->action = $action[0];
+//                    for ($i=1; $i < count($action); $i++) {
+//                        $this->action .= ucfirst($action[$i]);
+//                    }
+//                }
+//            }
+//
+//            unset($url[1]);
+//            $this->url_params = !empty($url) ? $url : [];
+//
+//            unset($url);
+//
+//        }else {
+////            $this->action = "loginService";
+//            header('location: '.URL.'admin/loginService');
+//        }
+          if (!isset($_SESSION['admin_uid'])) {
+              $this->action = "loginService";
+//              header('location:'.URL.'admin-login.php');
+          }else {
+              $url = trim($this->url,'/');
+              $url = explode('/', $url);
 
-                $action = explode('-',$action);
+              unset($url[0]);
 
-                if (count($action) == 1) {
-                    $this->action = $action[0];
-                }else {
-                    $this->action = $action[0];
-                    for ($i=1; $i < count($action); $i++) {
-                        $this->action .= ucfirst($action[$i]);
-                    }
-                }
-            }
+              if (count($url) == 0) {
+                  $this->action = "adDashboard";
+              }else {
+                  $action = $url[1];
 
-            unset($url[1]);
-            $this->url_params = !empty($url) ? $url : [];
+                  $action = explode('-',$action);
 
-            unset($url);
+                  if (count($action) == 1) {
+                      $this->action = $action[0];
+                  }else {
+                      $this->action = $action[0];
+                      for ($i=1; $i < count($action); $i++) {
+                          $this->action .= ucfirst($action[$i]);
+                      }
+                  }
+              }
 
-        }else {
-            $this->action = "loginService";
-        }
-      } 
+              unset($url[1]);
+              $this->url_params = !empty($url) ? $url : [];
+
+              unset($url);
+          }
+      }
       // Partie publique
       else {
         if ($this->url == "") {

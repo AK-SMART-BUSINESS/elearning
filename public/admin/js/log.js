@@ -1,9 +1,10 @@
 $(function () {
     $.get("app/.private/admin/check-login.php", function (res) {
-        console.log(res)
+        //console.log(res)
         if (res.success){
             window.location.replace(location.href+'/ad-dashboard');
         }
+        // console.log(location.href)
     })
 })
 

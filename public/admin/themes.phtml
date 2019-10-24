@@ -1,0 +1,50 @@
+<h1 class="uk-heading-line uk-text-left">
+    <span>Gestion des formations</span>
+</h1>
+<div>
+    <div uk-grid>
+        <div class="uk-width-auto@m uk-flex-last@m" id="rightNav">
+            <ul class="uk-tab-right" uk-tab="connect: #component-tab-right; animation: uk-animation-fade">
+                <li><a href="#">Thèmes enregistrées</a></li>
+                <li><a href="#">Ajouter un thème</a></li>
+<!--                <li><a href="#">Paramètre</a></li>-->
+            </ul>
+        </div>
+        <div class="uk-width-expand@m">
+            <ul id="component-tab-right" class="uk-switcher">
+                <li>
+                    <div>
+                        <h4>Toutes les formations</h4>
+                        <div class="uk-alert uk-alert-danger" uk-alert>
+                            <p>Pas de formation enregistrée</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h4>Ajouter un nouveau module de formation</h4>
+                    <div>
+                        <form>
+                            <div class="uk-margin">
+                                <label for="theme" class="uk-form-label">Thème de formation</label>
+                                <input type="text" class="uk-input" id="theme">
+                            </div>
+                            <div class="uk-margin">
+                                <label for="">Status: </label>
+                                <label for="publie">
+                                    <input type="radio" name="status" value="on" id="publie" checked> Publié
+                                </label>
+                                <label for="non_publie">
+                                    <input type="radio" name="status" value="off" id="non_publie"> Non publié
+                                </label>
+                            </div>
+                            <div class="uk-text-center">
+                                <button class="uk-button uk-button-primary uk-button-small" type="submit">Enregistrer</button>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+<!--                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>-->
+            </ul>
+        </div>
+    </div>
+</div>

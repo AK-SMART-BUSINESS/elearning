@@ -8,7 +8,7 @@ class Database
     ///             Database parameters               ///
     /// --------------------------------------------- ///
     private $host       = "localhost";
-    private $db_name    = "elearningdbmodele";
+    private $db_name    = "elearningdb";
     private $username   = "root";
     private $password   = "";
     /// -------------------------------------------- ///

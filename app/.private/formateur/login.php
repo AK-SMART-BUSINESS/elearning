@@ -8,7 +8,6 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 require dirname(dirname(dirname(__DIR__))).'/vendor/autoload.php';
 session_start();
 
-
 $result = [];
 
 $app = new \Core\Libs\MngFormateur();
@@ -17,15 +16,15 @@ if (isset($_POST) && !empty($_POST)){
     $password_form = $_POST['password'];
     $formateur = $app->getFormateurByEmail($email_formateur);
     if ($formateur){
-        if ($formateur->status_form == 'enable'){
-            $saved_password = $formateur->mdp_form;
+        if ($formateur->statusForm == 'on'){
+            $saved_password = $formateur->passForm;
             if ($password_form == $saved_password){
                 $result['success'] = true;
                 $result['message'] = "<b>Accèss autorisé !</b><br>Vous êtes connecté.";
                 $result['data'] = $formateur;
-                $_SESSION['frm_uid'] = $formateur->id_form;
-                $_SESSION['uemail'] = $formateur->email_form;
-                $_SESSION['user'] = $formateur->pseudo_form;
+                $_SESSION['frm_uid'] = $formateur->idFormateur;
+                $_SESSION['uemail'] = $formateur->emailForm;
+                $_SESSION['user'] = $formateur->prenomsForm.' '.$formateur->nomForm;
             }else{
                 $result['success'] = false;
                 $result['message'] = '<b>Accès réfuser !</b><br>Mot de passe incorrect';

@@ -11,21 +11,20 @@ session_start();
 
 $result = [];
 
-$app = new \Core\Libs\MngFormateur();
+$app = new \Core\Libs\MngAdmin();
 if (isset($_POST) && !empty($_POST)){
-    $email_formateur = htmlentities($_POST['email']);
+    $email_admin = htmlentities($_POST['email']);
     $password_form = $_POST['password'];
-    $formateur = $app->getFormateurByEmail($email_formateur);
-    if ($formateur){
-        if ($formateur->status_form == 'enable'){
-            $saved_password = $formateur->mdp_form;
+    $admin = $app->getAdminByEmail($email_admin);
+    if ($admin){
+        if ($admin->statusAdmin == 'on'){
+            $saved_password = $admin->mdp;
             if ($password_form == $saved_password){
                 $result['success'] = true;
                 $result['message'] = "<b>Accèss autorisé !</b><br>Vous êtes connecté.";
-                $result['data'] = $formateur;
-                $_SESSION['admin_uid'] = $formateur->id_form;
-                $_SESSION['uemail'] = $formateur->email_form;
-                $_SESSION['user'] = $formateur->pseudo_form;
+                $result['data'] = $admin;
+                $_SESSION['admin_uid'] = $admin->email;
+                $_SESSION['user'] = $admin->nomComplet;
             }else{
                 $result['success'] = false;
                 $result['message'] = '<b>Accès réfuser !</b><br>Mot de passe incorrect';

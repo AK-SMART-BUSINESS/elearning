@@ -2,7 +2,8 @@ $(function () {
     $.get("app/.private/apprenant/check-log.php", function (res) {
         console.log(res)
         if (res.success){
-            window.location.replace(location.href+'/dashbord');
+            window.location.replace(location.origin+'/classroom/dashbord');
+            // console.log(location.pathname)
         }
     })
 })

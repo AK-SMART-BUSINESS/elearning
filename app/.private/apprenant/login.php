@@ -17,15 +17,15 @@ if (isset($_POST) && !empty($_POST)){
     $password_apprenant = $_POST['password'];
     $apprenant = $app->getApprenantByEmail($email_apprenant);
     if ($apprenant){
-        if ($apprenant->status_app == 'enable'){
-            $saved_password = $apprenant->mdp_app;
+        if ($apprenant->statusApp == 'enable'){
+            $saved_password = $apprenant->passApp;
             if ($password_apprenant == $saved_password){
                 $result['success'] = true;
-                $result['message'] = "<b>Accèss autorisé !</b><br>Vous êtes connecté.";
+                $result['message'] = "<b>Accèss autorisé !</b><br>Vous êtes connec té.";
                 $result['data'] = $apprenant;
-                $_SESSION['uid'] = $apprenant->id_app;
-                $_SESSION['uemail'] = $apprenant->email_app;
-                $_SESSION['user'] = $apprenant->pseudo_app;
+                $_SESSION['uid'] = $apprenant->idApprenant;
+                $_SESSION['uemail'] = $apprenant->emailApp;
+                $_SESSION['user'] = $apprenant->pseudoApp;
             }else{
                 $result['success'] = false;
                 $result['message'] = '<b>Accès réfuser !</b><br>Mot de passe incorrect';

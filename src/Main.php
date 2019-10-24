@@ -143,6 +143,16 @@ class Main
       $output = ob_get_clean();
       require "public/admin/template.phtml";
   }
+
+    public function adThemeFormations()
+  {
+        ob_start();
+        require "public/admin/themes.phtml";
+        $output = ob_get_clean();
+        require "public/admin/template.phtml";
+  }
+
+
   public function adFormations()
   {
       ob_start();

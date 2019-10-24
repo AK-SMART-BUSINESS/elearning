@@ -16,7 +16,7 @@ class MngApprenant extends Database implements ApprenantInt
 
     public function getApprenants()
     {
-        $sql = "SELECT * FROM apprenant";
+        $sql = "SELECT * FROM apprenants";
 
         try{
             $request = $this->getDb()->prepare($sql);
@@ -38,7 +38,7 @@ class MngApprenant extends Database implements ApprenantInt
 
     public function getApprenantByEmail($email_app)
     {
-        $sql = 'SELECT * FROM apprenant WHERE email_app=?';
+        $sql = 'SELECT * FROM apprenants WHERE emailApp=?';
         try{
             if ($email_app != ""){
                 $request = $this->getDb()->prepare($sql);

@@ -1,8 +1,9 @@
 $(function () {
     $.get("app/.private/formateur/check-login.php", function (res) {
-        console.log(res)
+        //console.log(res)
         if (res.success){
-            window.location.replace(location.href+'/dash');
+            // window.location.replace(location.href+'/dash');
+            console.log(window.location.origin)
         }
     })
 })

@@ -3,7 +3,7 @@
                 <div>
                     <span class="uk-icon-button" uk-icon="icon: user; ratio: 2"></span>
                 </div>
-                <h5 class="uk-margin-remove" style="color: 3fff"><?= $_SESSION['user']; ?></h5>
+                <h5 class="uk-margin-remove" style="color: #fff"><?= $_SESSION['user']; ?></h5>
             </a> 
         </div>
         <hr class="uk-divider-icon">
@@ -27,7 +27,14 @@
                 <li class="uk-active"><a href="<?= URL.'admin/'; ?>"><span class="uk-margin-small-right" uk-icon="icon: home"></span> TABLEAU DE BORD</a></li>
                 <li class="uk-nav-divider"></li>
                 <li class="uk-nav-header">Menu</li>
-                <li><a href="<?= URL.'admin/ad-formations'; ?>"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Formations</a></li>
+                <li class="uk-parent">
+                    <a href="#">FORMATIONS</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="<?= URL.'admin/ad-theme-formations'; ?>"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Thèmes</a></li>
+                        <li><a href="<?= URL.'admin/ad-formations'; ?>"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Formations</a></li>
+                    </ul>
+                </li>
+<!--                <li><a href="--><?//= URL.'admin/ad-formations'; ?><!--"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Formations</a></li>-->
                 <!-- <li><a href="<?= URL.'admin/devoirs'; ?>"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Mes devoirs</a></li> -->
                 <!-- <li class="uk-nav-divider"></li> -->
                 <hr>
