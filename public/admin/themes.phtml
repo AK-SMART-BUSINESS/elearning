@@ -14,16 +14,18 @@
             <ul id="component-tab-right" class="uk-switcher">
                 <li>
                     <div>
-                        <h4>Toutes les formations</h4>
-                        <div class="uk-alert uk-alert-danger" uk-alert>
-                            <p>Pas de formation enregistrée</p>
+                        <h4>Tous les thèmes enregistrés</h4>
+                        <div id="liste">
+<!--                            <div class="uk-alert uk-alert-danger" uk-alert>-->
+<!--                                <p>Pas de formation enregistrée</p>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </li>
                 <li>
                     <h4>Ajouter un nouveau module de formation</h4>
                     <div>
-                        <form>
+                        <form id="frmAddNewTheme">
                             <div class="uk-margin">
                                 <label for="theme" class="uk-form-label">Thème de formation</label>
                                 <input type="text" class="uk-input" id="theme">
@@ -48,3 +50,5 @@
         </div>
     </div>
 </div>
+
+<script src="<?= URL.'public/admin/js/themes.js'; ?>"></script>
