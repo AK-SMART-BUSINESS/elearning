@@ -8,7 +8,6 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 require dirname(dirname(dirname(__DIR__))).'/vendor/autoload.php';
 session_start();
 
-
 $result = [];
 
 $app = new \Core\Libs\MngTheme();

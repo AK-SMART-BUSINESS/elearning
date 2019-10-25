@@ -1,11 +1,10 @@
 $(function () {
     getThemes()
-})
+});
 // --- Récupération des thèmes enregistrés
 function getThemes() {
     $("#liste").html('<div class="uk-text-center uk-text-success"><span class="uk-margin-small-right" uk-spinner="ratio: 3"></span></div>')
     $.get("app/.private/themes/themes.php", function (res) {
-        //console.log(res);
         if (res.success){
             var html = `
                 <table class="uk-table uk-table-small uk-table-divider">
@@ -68,23 +67,23 @@ $("#frmAddNewTheme").submit(function (f) {
         return false
     }
 
-    $.post("app/.private/themes/new.php", form_data, function (donnees) {
-        console.log(donnees);
-        if (donnees.success){
+    $.post("app/.private/themes/new.php", form_data, function (data) {
+        if (data.success){
             UIkit.notification({
-                message: donnees.msg,
+                message: data.message,
                 status: 'primary',
                 pos: 'top-center',
                 timeout: 3000
             });
+            $("#theme").val("");
             getThemes();
         } else{
             UIkit.notification({
-                message: donnees.msg,
+                message: data.message,
                 status: 'warning',
                 pos: 'top-center',
                 timeout: 3000
             });
         }
     })
-})
+});

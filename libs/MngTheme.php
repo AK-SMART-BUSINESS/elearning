@@ -21,19 +21,16 @@ class MngTheme extends Database implements ThemeInt
     public function addTheme(Themes $themes)
     {
         try{
-            $sql = "INSERT INTO themes 
-                    SET intituleTh=:intitule, statusTh=:status";
+            $sql = "INSERT INTO themes SET intituleTh=:intitule, statusTh=:status";
             if ($themes){
-                $db = $this->getDb();
-                $req = $db->prepare($sql);
-                $req->bindParam(":intitule", $themes->getIntituleTh());
-                $req->bindParam(":status", $themes->getStatusTh());
-                if ($req->execute())
-                {
-                    return true;
-                }
+                $intitule_theme = $themes->getIntituleTh();
+                $status_theme = $themes->getStatusTh();
+                $req = $this->getDb()->prepare($sql);
+                $req->bindParam(":intitule", $intitule_theme);
+                $req->bindParam(":status", $status_theme);
+                if ($req->execute()) return true;
             }else{
-                throw new \Exception("Erreur: Un object theme doit être créé avant ajout.");
+                throw new \Exception("Erreur : Argument [Object - themes] manque !");
             }
         }catch (\Exception $e){
             $this->setErrorMsg($e->getMessage());
