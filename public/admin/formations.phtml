@@ -23,34 +23,40 @@
                     <li>
                         <h4>Ajouter un nouveau module de formation</h4>
                         <div>
-                            <form>
+                            <form id="frmAddFormation" enctype="multipart/form-data" novalidate>
                                 <div class="uk-margin">
                                     <label for="" class="uk-form-label">Intitulé du cours</label>
-                                    <input type="text" class="uk-input"> 
+                                    <input type="text" id="intitule" class="uk-input">
+                                </div>
+<!--                                <div class="uk-margin">-->
+<!--                                    <label for="" class="uk-form-label">Image intro</label>-->
+<!--                                    <input type="file" id="intitule" class="uk-input">-->
+<!--                                </div>-->
+                                <div class="uk-margin">
+                                    <label for="" class="uk-form-label">Thème</label>
+                                    <select class="uk-select" name="" id="theme_form"></select>
+                                </div>
+                                <div class="uk-margin">
+                                    <div class="uk-inline">
+                                        <label for="prix">Coût de la fomation</label>
+                                        <input type="text" name="prix" id="prix" class="uk-input uk-form-width-small">
+                                        (F CFA)
+                                    </div>
+                                    <div class="uk-inline">
+                                        <label for="prix">Image d'introduction</label>
+                                        <input type="file" name="image_form" id="image_form" class="uk-file">
+                                    </div>
                                 </div>
                                 <div class="uk-margin">
                                     <label for="" class="uk-form-label">Courte description</label>
-                                    <textarea name="" id="" class="uk-textarea"></textarea> 
+                                    <textarea name="" id="description" class="uk-textarea"></textarea>
                                 </div>
                                 <div class="uk-margin">
                                     <label for="" class="uk-form-label">Préréquis</label>
-                                    <textarea name="" id="" class="uk-textarea"></textarea> 
+                                    <textarea name="" id="prerequis" class="uk-textarea"></textarea>
                                 </div>
-                                <div>
-                                    Nombre de chapitre: 
-                                    <div class="uk-inline">
-                                        <input type="number" class="uk-input uk-form-width-small">
-                                    </div>
-
-                                    Durrée estimée à : 
-                                    <div class="uk-inline">
-                                        <input type="number" class="uk-input uk-form-width-small">
-                                    </div>
-                                    <select name="" id="" class="uk-select uk-form-width-small">
-                                        <option value="heure">Heure(s)</option>
-                                        <option value="jour">Jour(s)</option>
-                                        <option value="semain">Semaine(s)</option>
-                                    </select>
+                                <div class="uk-margin uk-text-right">
+                                    <button type="submit" class="uk-button uk-button-small uk-button-primary">Enregistrer</button>
                                 </div>
                             </form>
                         </div>
@@ -60,3 +66,10 @@
             </div>
         </div>
 </div>
+
+<script>
+    CKEDITOR.replaceAll(['description', 'prerequis']);
+</script>
+
+<script src="<?= URL.'public/admin/js/app.js'; ?>"></script>
+<script src="<?= URL.'public/admin/js/formations.js'; ?>"></script>
