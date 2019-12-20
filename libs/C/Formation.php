@@ -28,7 +28,8 @@ class Formation
      * @param $image
      * @param $themes_idTheme
      */
-    public function __construct($intituleForm, $descriptionForm, $prerequis, $prix, $image, $themes_idTheme)
+    public function __construct($intituleForm, $descriptionForm, 
+                                $prerequis, $prix, $image, $themes_idTheme)
     {
         $this->intituleForm = $intituleForm;
         $this->descriptionForm = $descriptionForm;

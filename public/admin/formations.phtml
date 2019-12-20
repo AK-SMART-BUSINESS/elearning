@@ -13,28 +13,28 @@
             <div class="uk-width-expand@m">
                 <ul id="component-tab-right" class="uk-switcher">
                     <li>
-                        <div>
-                            <h4>Toutes les formations</h4>
+                        <div id="tabList">
+                            <!-- <h4>Toutes les formations</h4>
                             <div class="uk-alert uk-alert-danger" uk-alert>
                                 <p>Pas de formation enregistrée</p>
-                            </div>
+                            </div> -->
                         </div>
                     </li>
                     <li>
                         <h4>Ajouter un nouveau module de formation</h4>
                         <div>
-                            <form id="frmAddFormation" enctype="multipart/form-data" novalidate>
+                            <form id="frmAddFormation" enctype="multipart/form-data" method="post" name="frmAddFormation" novalidate>
                                 <div class="uk-margin">
                                     <label for="" class="uk-form-label">Intitulé du cours</label>
-                                    <input type="text" id="intitule" class="uk-input">
+                                    <input type="text" id="intitule" name="intitule" class="uk-input" required>
                                 </div>
 <!--                                <div class="uk-margin">-->
 <!--                                    <label for="" class="uk-form-label">Image intro</label>-->
 <!--                                    <input type="file" id="intitule" class="uk-input">-->
 <!--                                </div>-->
                                 <div class="uk-margin">
-                                    <label for="" class="uk-form-label">Thème</label>
-                                    <select class="uk-select" name="" id="theme_form"></select>
+                                    <label for="theme_form" class="uk-form-label">Thème</label>
+                                    <select class="uk-select" name="theme_form" id="theme_form" required></select>
                                 </div>
                                 <div class="uk-margin">
                                     <div class="uk-inline">
@@ -43,17 +43,17 @@
                                         (F CFA)
                                     </div>
                                     <div class="uk-inline">
-                                        <label for="prix">Image d'introduction</label>
+                                        <label for="image_form">Image d'introduction</label>
                                         <input type="file" name="image_form" id="image_form" class="uk-file">
                                     </div>
                                 </div>
                                 <div class="uk-margin">
-                                    <label for="" class="uk-form-label">Courte description</label>
-                                    <textarea name="" id="description" class="uk-textarea"></textarea>
+                                    <label for="description" class="uk-form-label">Courte description</label>
+                                    <textarea name="description" id="description" class="uk-textarea"></textarea>
                                 </div>
                                 <div class="uk-margin">
-                                    <label for="" class="uk-form-label">Préréquis</label>
-                                    <textarea name="" id="prerequis" class="uk-textarea"></textarea>
+                                    <label for="prerequis" class="uk-form-label">Préréquis</label>
+                                    <textarea name="prerequis" id="prerequis" class="uk-textarea"></textarea>
                                 </div>
                                 <div class="uk-margin uk-text-right">
                                     <button type="submit" class="uk-button uk-button-small uk-button-primary">Enregistrer</button>

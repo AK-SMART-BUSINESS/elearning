@@ -1,3 +1,83 @@
 <h1 class="uk-heading-line uk-text-left">
 <span>Gestion des formateurs</span>
 </h1>
+
+<div>
+        <div uk-grid>
+            <div class="uk-width-auto@m uk-flex-last@m" id="rightNav">
+                <ul class="uk-tab-right" uk-tab="connect: #component-tab-right; animation: uk-animation-fade">
+                    <li><a href="#">Formateurs enregistrés</a></li>
+                    <li><a href="#">Ajouter un formateur</a></li>
+                </ul>
+            </div>
+            <div class="uk-width-expand@m">
+                <ul id="component-tab-right" class="uk-switcher">
+                    <li>
+                        <div id="tabList">
+                            <!-- <h4>Toutes les formations</h4>
+                            <div class="uk-alert uk-alert-danger" uk-alert>
+                                <p>Pas de formation enregistrée</p>
+                            </div> -->
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Ajouter un nouveau module de formation</h4>
+                        <div>
+                            <form id="frmAddFormateur" enctype="multipart/form-data" method="post" name="frmAddFormateur" novalidate>
+                                <div class="uk-margin">
+                                    <label for="" class="uk-form-label">Nom</label>
+                                    <input type="text" id="nom" name="nom" class="uk-input" required>
+                                </div>
+
+                                <div class="uk-margin">
+                                    <label for="" class="uk-form-label">Prénoms</label>
+                                    <input type="text" id="prenoms" name="prenoms" class="uk-input" required>
+                                </div>
+
+                                <div class="uk-margin">
+                                    <label for="" class="uk-form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="uk-input" required>
+                                </div>
+
+                                <div class="uk-margin">
+                                    <label for="" class="uk-form-label">Contact</label>
+                                    <input type="text" id="contact" name="contact" class="uk-input" required>
+                                </div>
+
+                                <div class="uk-margin">
+                                    <label for="" class="uk-form-label">Spécialités</label>
+                                    <input type="text" id="specialites" name="specialites" class="uk-input" required>
+                                </div>
+
+                                <div class="uk-margin">
+                                    <label for="" class="uk-form-label">Pays</label>
+                                    <input type="text" id="pays" name="pays" class="uk-input" required>
+                                </div>
+
+                                <div class="uk-margin">
+                                    <label for="" class="uk-form-label">Ville</label>
+                                    <input type="text" id="ville" name="ville" class="uk-input" required>
+                                </div>
+
+                                <div class="uk-margin">
+                                    <label for="" class="uk-form-label">Définir un mot de passe</label>
+                                    <input type="text" id="passe" name="passe" class="uk-input" required>
+                                </div>
+                                
+                                <div class="uk-margin uk-text-right">
+                                    <button type="submit" class="uk-button uk-button-small uk-button-primary">Enregistrer</button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>
+
+<script>
+    // CKEDITOR.replaceAll(['description', 'prerequis']);
+</script>
+
+<script src="<?= URL.'public/admin/js/app.js'; ?>"></script>
+<script src="<?= URL.'public/admin/js/formateurs.js'; ?>"></script>

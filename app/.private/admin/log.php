@@ -23,7 +23,8 @@ if (isset($_POST) && !empty($_POST)){
                 $result['success'] = true;
                 $result['message'] = "<b>Accèss autorisé !</b><br>Vous êtes connecté.";
                 $result['data'] = $admin;
-                $_SESSION['admin_uid'] = $admin->email;
+                $_SESSION['admin_uid'] = $admin->idAdmini;
+                $_SESSION['admin_mail'] = $admin->email;
                 $_SESSION['user'] = $admin->nomComplet;
             }else{
                 $result['success'] = false;

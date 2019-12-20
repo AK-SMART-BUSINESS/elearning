@@ -11,12 +11,12 @@ $formations = $app->getFormations();
 
 if ($formations){
     $resultats["success"] = true;
-    $resultats["message"] = count($formations).' apprenant(s) trouvé(s)';
-    $resultats["donnees"] = $formation;
+    $resultats["message"] = count($formations).' formations(s) trouvée(s)';
+    $resultats["donnees"] = $formations;
 
 }else{
     $resultats["success"] = false;
-    $resultats["message"] = 'Pas de formation trouvé';
+    $resultats["message"] = 'Pas de formation trouvée';
     $resultats["donnees"] = $app->getErrorMsg();
 }
 

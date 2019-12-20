@@ -181,6 +181,13 @@ class Main
       $output = ob_get_clean();
       require "public/admin/template.phtml";
   }
+  public function detailFormation()
+  {
+      ob_start();
+      require "public/admin/detail-formation.phtml";
+      $output = ob_get_clean();
+      require "public/admin/template.phtml";
+  }
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
