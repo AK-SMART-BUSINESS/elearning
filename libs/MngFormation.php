@@ -65,10 +65,18 @@ class MngFormation extends Database implements FormationInt
      */
     public function getFormations()
     {
-        $sql = "SELECT mf.*, t.intituleTh theme
+//        $sql = "SELECT mf.*, t.intituleTh theme
+//                FROM moduleformations mf
+//                INNER JOIN themes t
+//                    ON t.idTheme=mf.themes_idTheme";
+        $sql = "SELECT mf.*, t.intituleTh theme, s.*
                 FROM moduleformations mf
                 INNER JOIN themes t
-                    ON t.idTheme=mf.themes_idTheme";
+                    ON t.idTheme=mf.themes_idTheme
+                INNER JOIN sessionformation s
+                    on s.moduleFormations_idModuleForm=mf.idModuleForm
+                WHERE mf.statusForm='on'
+                ORDER BY mf.idModuleForm DESC";
         try {
             // $requet = $this->getDb()->query('SELECT * FROM moduleformations');
             $requet = $this->getDb()->query($sql);

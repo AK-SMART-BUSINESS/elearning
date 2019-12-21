@@ -1,22 +1,24 @@
+<?php
+//    var_dump($modules);
+?>
 <h1>Catalogue de cours</h1>
 <div class="uk-container">
 
 <div class="uk-grid" uk-grid>
     <div class="uk-card uk-card-secondary uk-card-body uk-width-1-4@m" uk-card>
         <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                <li class="uk-active"><a href="<?= URL.'panel/'; ?>">TOUS LES COURS</a></li>
+                <li class="uk-active"><a href="<?= URL.'panel/'; ?>">FILTRE</a></li>
                 <li class="uk-nav-divider"></li>
-                <li class="uk-nav-header">FILTRER PAR PERIODE</li>
-                <li><a href="<?= URL.''; ?>">En cours</a></li>
-                <li><a href="<?= URL.''; ?>">Démarre bientôt</a></li>
-<!--                <li><a href="--><?//= URL.''; ?><!--">Soumis à inscription</a></li>-->
-                <li class="uk-nav-divider"></li>
+<!--                <li class="uk-nav-header">FILTRER PAR PERIODE</li>-->
+<!--                <li><a href="--><?//= URL.''; ?><!--">En cours</a></li>-->
+<!--                <li><a href="--><?//= URL.''; ?><!--">Démarre bientôt</a></li>-->
+<!--                <li class="uk-nav-divider"></li>-->
                 <li class="uk-nav-header">FILTRER PAR THEME</li>
-                <li><a href="<?= URL.''; ?>">Programmation</a></li>
-                <li><a href="<?= URL.''; ?>">Administration système</a></li>
-                <li><a href="<?= URL.''; ?>">Réseaux informatiques</a></li>
-                <li><a href="<?= URL.''; ?>">Sécurité informatique</a></li>
-                <li><a href="<?= URL.''; ?>">Langue</a></li>
+                <?php if (isset($themes) && !empty($themes)): ?>
+                    <?php foreach ($themes as $theme): ?>
+                <li><a href="javascript:void(0);" id="<?= $theme->idTheme; ?>"><?= $theme->intituleTh; ?></a></li>
+                    <?php endforeach; ?>
+                <?php endif; ?>
         </ul>
     </div>
     <div class="uk-width-3-4@m">
@@ -25,148 +27,33 @@
             <hr class="uk-divider-icon uk-margin-remove">
         </div>
         <div class="uk-grid uk-grid-divider uk-grid-match uk-grid-small uk-child-width-1-3@m" uk-grid>
+            <?php if (isset($modules) && !empty($modules)): ?>
+                <?php foreach ($modules as $module): ?>
             <div>
                 <div class="uk-card uk-card-default uk-card-small uk-card-body">
                     <div class="uk-card-header">
-                        <div class="uk-card-badge uk-label">Status</div>
-                        <h3 class="uk-card-title">Cours title</h3>
+                        <div class="uk-card-badge uk-label"><?= ucfirst($module->statusSession); ?></div>                        
                     </div>
                     <div class="uk-card-media-top">
-                        <img src="<?= URL.'media/img/paper.jpg'; ?>" alt="">
+                        <img src="<?= URL.'media/uploads/'.$module->image; ?>" alt="">
                     </div>
                     <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem 
-                        illum vero commodi alias molestias eaque ducimus qui! Alias sequi maiores eveniet, 
-                        </p>
+                        <h3 class="uk-card-title">
+                            <a href="./detail-cours/<?= $module->idModuleForm; ?>"><?= html_entity_decode($module->intituleForm); ?></a>
+                        </h3>
+                        <h4 class="uk-margin-remove"><small>Thème:</small> <span class="uk-text-danger"><?= $module->theme; ?></span></h4>
+                        <!-- <?= html_entity_decode(substr($module->descriptionForm, 0, 200)); ?> -->
                     </div>
                     <div class="uk-card-footer">
                         <div class="uk-grid uk-grid-small uk-child-width-1-2@m" uk-grid>
-                            <button class="uk-button uk-button-default">Détail</button>
-                            <button class="uk-button uk-button-primary">S'inscrire</button>
+                            <a href="./detail-cours/<?= $module->idModuleForm; ?>" class="uk-button uk-button-default">Détail</a>
+                            <a href="./inscription-cours/<?= $module->idModuleForm; ?>" class="uk-button uk-button-primary">S'inscrire</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div>
-                <div class="uk-card uk-card-default uk-card-small uk-card-body">
-                    <div class="uk-card-header">
-                        <div class="uk-card-badge uk-label">Status</div>
-                        <h3 class="uk-card-title">Cours title</h3>
-                    </div>
-                    
-                    <div class="uk-card-media-top">
-                        <img src="<?= URL.'media/img/paper.jpg'; ?>" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem 
-                        illum vero commodi alias molestias eaque ducimus qui! Alias sequi maiores eveniet, 
-                        </p>
-                    </div>
-                    <div class="uk-card-footer">
-                        <div class="uk-grid uk-grid-small uk-child-width-1-2@m" uk-grid>
-                            <button class="uk-button uk-button-default">Détail</button>
-                            <button class="uk-button uk-button-primary">S'inscrire</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="uk-card uk-card-default uk-card-small uk-card-body">
-                    <div class="uk-card-header">
-                        <div class="uk-card-badge uk-label">Status</div>
-                        <h3 class="uk-card-title">Cours title</h3>
-                    </div>
-                    
-                    <div class="uk-card-media-top">
-                        <img src="<?= URL.'media/img/paper.jpg'; ?>" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem 
-                        illum vero commodi alias molestias eaque ducimus qui! Alias sequi maiores eveniet, 
-                        </p>
-                    </div>
-                    <div class="uk-card-footer">
-                        <div class="uk-grid uk-grid-small uk-child-width-1-2@m" uk-grid>
-                            <button class="uk-button uk-button-default">Détail</button>
-                            <button class="uk-button uk-button-primary">S'inscrire</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="uk-card uk-card-default uk-card-small uk-card-body">
-                    <div class="uk-card-header">
-                        <div class="uk-card-badge uk-label">Status</div>
-                        <h3 class="uk-card-title">Cours title</h3>
-                    </div>
-                    
-                    <div class="uk-card-media-top">
-                        <img src="<?= URL.'media/img/paper.jpg'; ?>" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem 
-                        illum vero commodi alias molestias eaque ducimus qui! Alias sequi maiores eveniet, 
-                        </p>
-                    </div>
-                    <div class="uk-card-footer">
-                        <div class="uk-grid uk-grid-small uk-child-width-1-2@m" uk-grid>
-                            <button class="uk-button uk-button-default">Détail</button>
-                            <button class="uk-button uk-button-primary">S'inscrire</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="uk-card uk-card-default uk-card-small uk-card-body">
-                    <div class="uk-card-header">
-                        <div class="uk-card-badge uk-label">Status</div>
-                        <h3 class="uk-card-title">Cours title</h3>
-                    </div>
-                    
-                    <div class="uk-card-media-top">
-                        <img src="<?= URL.'media/img/paper.jpg'; ?>" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem 
-                        illum vero commodi alias molestias eaque ducimus qui! Alias sequi maiores eveniet, 
-                        </p>
-                    </div>
-                    <div class="uk-card-footer">
-                        <div class="uk-grid uk-grid-small uk-child-width-1-2@m" uk-grid>
-                            <button class="uk-button uk-button-default">Détail</button>
-                            <button class="uk-button uk-button-primary">S'inscrire</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="uk-card uk-card-default uk-card-small uk-card-body">
-                    <div class="uk-card-header">
-                        <div class="uk-card-badge uk-label">Status</div>
-                        <h3 class="uk-card-title">Cours title</h3>
-                    </div>
-                    
-                    <div class="uk-card-media-top">
-                        <img src="<?= URL.'media/img/paper.jpg'; ?>" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem 
-                        illum vero commodi alias molestias eaque ducimus qui! Alias sequi maiores eveniet, 
-                        </p>
-                    </div>
-                    <div class="uk-card-footer">
-                        <div class="uk-grid uk-grid-small uk-child-width-1-2@m" uk-grid>
-                            <button class="uk-button uk-button-default">Détail</button>
-                            <button class="uk-button uk-button-primary">S'inscrire</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </div>
     </div>
 </div>

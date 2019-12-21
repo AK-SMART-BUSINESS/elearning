@@ -2,6 +2,7 @@
 namespace App;
 //use Libs\panel\MngArticles;
 use Core\Libs\MngFormation;
+use Core\Libs\MngTheme;
 
 /**
  * Class définissant les actions de l'application
@@ -43,6 +44,10 @@ class Main
 
     public function catalogue()
     {
+      $app = new MngFormation();
+      $app_theme = new MngTheme();
+      $themes = $app_theme->getActiveThemes();
+      $modules = $app->getFormations();
         ob_start();
         require "public/tpl/cours.phtml";
         $output = ob_get_clean();
@@ -163,7 +168,21 @@ class Main
       ob_start();
       require "public/classroom/dashbord.phtml";
       $output = ob_get_clean();
-      require "public/classroom/tpl.phtml";
+      require "public/classroom/template.phtml";
+  }
+  public function mesCours()
+  {
+      ob_start();
+      require "public/classroom/cours.phtml";
+      $output = ob_get_clean();
+      require "public/classroom/template.phtml";
+  }
+  public function profile()
+  {
+      ob_start();
+      require "public/classroom/profile.phtml";
+      $output = ob_get_clean();
+      require "public/classroom/template.phtml";
   }
 
 ////////////////////////////////////////////////////////////////

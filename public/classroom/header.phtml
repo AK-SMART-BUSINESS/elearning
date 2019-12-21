@@ -1,0 +1,24 @@
+<nav class="uk-navbar-container uk-navbar" uk-navbar>
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="<?= URL.'classroom/'; ?>"><span uk-icon="icon: home"></span> Tableau de bord</a></li>
+            <!-- <li class="uk-parent"><a href=""></a></li>
+            <li><a href=""></a></li> -->
+        </ul>
+    </div>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+            <li><a href="<?= URL.'classroom/mes-cours'; ?>">Mes cours</a></li>
+            <li>
+                <a href=""><span uk-icon="icon: user"></span> <?= $_SESSION['user']; ?></a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="<?= URL.'classroom/profile'; ?>">Mon profile</a></li>
+                        <li><a href="<?= URL.'logout'; ?>">Déconnexion</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+

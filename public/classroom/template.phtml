@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="<?= URL.'assets/css/aos.css' ?>">
 </head>
 <body>
-<?php require_once 'header.phtml'; ?>
-    <main>
-        <?= $output; ?>
-    </main>
-<?php require_once 'footer.phtml'; ?>
+    <div class="uk-container">
+    <?php require_once 'header.phtml'; ?>
+        <main>
+            <?= $output; ?>
+        </main>
+    <?php require_once 'footer.phtml'; ?>
+    </div>
 
 <script src="<?= URL.'assets/js/jquery.min.js';?>"></script>
 <script src="<?= URL.'assets/uikit/dist/js/uikit.min.js';?>"></script>
