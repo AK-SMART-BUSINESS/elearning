@@ -40,7 +40,7 @@ let Application = {
             $.post("app/.private/apprenant/add-apprenant.php", data, function (res) {
                 alert(res.message)
                 if (res.success) {
-                    window.location.href('./classroom/');
+                    window.location.href='./classroom/';
                 } else {
                     console.log(res)
                     return false;
@@ -51,7 +51,7 @@ let Application = {
             $.post("app/.private/apprenant/inscription-formation.php", data, function (res) {
                 alert(res.message)
                 if (res.success) {
-                    window.location.href('./classroom/dashbord');
+                    window.location.href= './classroom/dashbord';
                 } else {
                     console.log(res)
                     return false;

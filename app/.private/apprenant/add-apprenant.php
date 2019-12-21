@@ -19,15 +19,20 @@ if (isset($_POST) && !empty($_POST)){
     $passe = $_POST['passe'];
 
     $apprenant = new \Core\Libs\C\Apprenant($nom,$prenoms,$contact,$email,$passe,$pseudo);
-
-    if ($app->addApprenant($apprenant)){
-        $result['success'] = true;
-        $result['message'] = "Nouveau formateur enregistré";
-    } else {
+    if ($app->getApprenantByEmail($email)){
         $result['success'] = false;
-        $result['message'] = "Echèc de création de votre compte ! Veuillez réessayer plutard.";
-        $result['donnees'] = $app->getErrorMsg();
+        $result['message'] = "Erreur ! Ce compte existe déjà";
+    } else {
+        if ($app->addApprenant($apprenant)){
+            $result['success'] = true;
+            $result['message'] = "Nouveau formateur enregistré";
+        } else {
+            $result['success'] = false;
+            $result['message'] = "Echèc de création de votre compte ! Veuillez réessayer plutard.";
+            $result['donnees'] = $app->getErrorMsg();
+        }
     }
+
 }
 
 echo json_encode($result);

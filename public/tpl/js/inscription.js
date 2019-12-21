@@ -1,9 +1,9 @@
 $("#frminscrip").submit(function (f) {
     f.preventDefault()
     var data = {
-        mon: $("#nom_app").val(),
+        nom: $("#nom_app").val(),
         prenoms: $("#prenom_app").val(),
-        contact: $("#module").val(),
+        contact: $("#contact_app").val(),
         email : $("#email_app").val(),
         passe : $("#mdp_app").val(),
         pseudo : $("#pseudo_app").val(),
