@@ -11,11 +11,14 @@ $result = [];
 
 $app = new \Core\Libs\MngApprenant();
 if (isset($_POST) && !empty($_POST)) {
+    // $result['data'] = $_SESSION['uid'];
     $module = (int) $_POST['module'];
     $mode = $_POST['mode'];
     $reference = $_POST['reference'];
+    $uid = $_SESSION['uid'];
+    // $result['data'] = $reference;
 
-    if ($app->inscriptionFormation($_SESSION['uid'], $module, $mode, $reference)){
+    if ($app->inscriptionFormation($uid, $module, $mode, $reference)){
         $result['success'] = true;
         $result['message'] = "Bravo ! Vous êtes inscrit à la formation";
     }

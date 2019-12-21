@@ -1,6 +1,6 @@
 $("#frmFinishPaie").submit(function (f) {
     f.preventDefault()
-    var data = {
+    let data = {
         mode: $("#mode_paie").val(),
         reference: $("#reference_depot").val(),
         module: $("#module").val()
@@ -16,15 +16,19 @@ $("#frmFinishPaie").submit(function (f) {
         return false;
     }
 
-    Application.Apprenant.inscriptionCours(data)
+    // Application.Apprenant.inscriptionCours(data)
+    console.log(data);
+    
 
-    // $.post("app/.private/apprenant/inscription-formation.php", data, function (res) {
-    //     if (res.success) {
-    //         alert(res.message)
-    //         window.location.href = './classroom/dashboard'
-    //     } else{
-    //         alert(ress.message);
-    //         return false;
-    //     }
-    // })
+    $.post("app/.private/apprenant/inscription-formation.php", data, function (res) {
+        console.log(res);
+        
+        if (res.success) {
+            alert(res.message)
+            window.location.href = './classroom/'
+        } else{
+            alert(res.message);
+            return false;
+        }
+    })
 })
