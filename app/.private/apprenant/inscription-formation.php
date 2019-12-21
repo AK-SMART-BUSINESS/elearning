@@ -15,7 +15,15 @@ if (isset($_POST) && !empty($_POST)) {
     $mode = $_POST['mode'];
     $reference = $_POST['reference'];
 
-    
+    if ($app->inscriptionFormation($_SESSION['uid'], $module, $mode, $reference)){
+        $result['success'] = true;
+        $result['message'] = "Bravo ! Vous êtes inscrit à la formation";
+    }
+    else {
+        $result['success'] = false;
+        $result['message'] = "Echèc lors de l'inscription !";
+        $result['donnees'] = $app->getErrorMsg();
+    }
 } else {
     $result['success'] = false;
     $result['message'] = "Pas de données soumises !";
