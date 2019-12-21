@@ -100,6 +100,27 @@ class MngApprenant extends Database implements ApprenantInt
 
     }
 
+    public function getApprenantCours($uid)
+    {
+        
+    }
+
+    public function getApprenantCoursBySession($uid, $session_num)
+    {
+        $sql = "SELECT * FROM inscriptionformation 
+                WHERE sessionFormation_idSessionForm=? AND apprenants_idApprenant=?";
+        try {
+            $req = $this->getDb()->prepare($sql);
+            $req->execute([$session_num, $uid]);
+            $res = $req->fetch();
+            $req->closeCursor();
+            return $res;
+        } catch (\Exception $e) {
+            $this->setErrorMsg($e->getMessage());
+            return false;
+        }
+    }
+
     public function test()
     {
         return 'Ok';

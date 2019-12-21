@@ -16,19 +16,19 @@ $("#frmFinishPaie").submit(function (f) {
         return false;
     }
 
-    // Application.Apprenant.inscriptionCours(data)
-    console.log(data);
+    Application.Apprenant.inscriptionCours(data)
+    // console.log(data);
     
 
-    $.post("app/.private/apprenant/inscription-formation.php", data, function (res) {
-        console.log(res);
+    // $.post("app/.private/apprenant/inscription-formation.php", data, function (res) {
+    //     // console.log(res);
         
-        if (res.success) {
-            alert(res.message)
-            window.location.href = './classroom/'
-        } else{
-            alert(res.message);
-            return false;
-        }
-    })
+    //     if (res.success) {
+    //         alert(res.message)
+    //         window.location.href = './classroom/'
+    //     } else{
+    //         alert(res.message);
+    //         return false;
+    //     }
+    // })
 })

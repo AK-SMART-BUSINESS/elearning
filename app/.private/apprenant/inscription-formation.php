@@ -18,15 +18,22 @@ if (isset($_POST) && !empty($_POST)) {
     $uid = $_SESSION['uid'];
     // $result['data'] = $reference;
 
-    if ($app->inscriptionFormation($uid, $module, $mode, $reference)){
-        $result['success'] = true;
-        $result['message'] = "Bravo ! Vous êtes inscrit à la formation";
-    }
-    else {
+    if ($app->getApprenantCoursBySession($uid, $module)) {
         $result['success'] = false;
-        $result['message'] = "Echèc lors de l'inscription !";
-        $result['donnees'] = $app->getErrorMsg();
-    }
+        $result['message'] = "Vous êtes déjà inscrit à ce cours !";
+    } else {
+        $result['data'] = 'ok';
+        // if ($app->inscriptionFormation($uid, $module, $mode, $reference)){
+        //     $result['success'] = true;
+        //     $result['message'] = "Bravo ! Vous êtes inscrit à la formation";
+        // }
+        // else {
+        //     $result['success'] = false;
+        //     $result['message'] = "Echèc lors de l'inscription !";
+        //     $result['donnees'] = $app->getErrorMsg();
+        // }
+    } 
+    
 } else {
     $result['success'] = false;
     $result['message'] = "Pas de données soumises !";
