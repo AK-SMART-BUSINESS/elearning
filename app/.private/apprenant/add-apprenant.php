@@ -25,7 +25,7 @@ if (isset($_POST) && !empty($_POST)){
     } else {
         if ($app->addApprenant($apprenant)){
             $result['success'] = true;
-            $result['message'] = "Nouveau formateur enregistré";
+            $result['message'] = "Bravo ! Votre comptre à été créé.";
         } else {
             $result['success'] = false;
             $result['message'] = "Echèc de création de votre compte ! Veuillez réessayer plutard.";
