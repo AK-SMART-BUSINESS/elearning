@@ -16,13 +16,15 @@ $("#frmFinishPaie").submit(function (f) {
         return false;
     }
 
-    $.post("app/.private/apprenant/inscription-formation.php", data, function (res) {
-        if (res.success) {
-            alert(res.message)
-            window.location.href = './classroom/dashboard'
-        } else{
-            alert(ress.message);
-            return false;
-        }
-    })
+    Application.Apprenant.inscriptionCours(data)
+
+    // $.post("app/.private/apprenant/inscription-formation.php", data, function (res) {
+    //     if (res.success) {
+    //         alert(res.message)
+    //         window.location.href = './classroom/dashboard'
+    //     } else{
+    //         alert(ress.message);
+    //         return false;
+    //     }
+    // })
 })
