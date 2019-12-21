@@ -50,7 +50,7 @@
                     <p>Effectuez votre dépôt sur l'un de nos compte mobile money puis entrez la référence de votre dépôt</p>                    
                 </div>
                 <form action="" method="post" id="frmFinishPaie">
-                    <input type="hidden" name="module" id="module" value="<?= $id_formation ?>">
+                    <input type="hidden" name="module" id="module" value="<?= $formation->sessionNom; ?>">
                         <div class="uk-margin">
                             <select name="mode_paie" id="mode_paie" class="uk-select">
                                 <option value="">------ Sélection mobible money ------</option>

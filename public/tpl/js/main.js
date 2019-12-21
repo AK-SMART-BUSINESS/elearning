@@ -34,5 +34,18 @@ let Application = {
                 }               
             })
         }
+    },
+    Apprenant: {
+        addApprenant: (data) => {
+            $.post("app/.private/apprenant/add-apprenant.php", data, function (res) {
+                alert(res.message)
+                if (res.success) {
+                    window.location.href('./classroom/');
+                } else {
+                    console.log(res)
+                    return false;
+                }
+            })
+        }
     }
 }

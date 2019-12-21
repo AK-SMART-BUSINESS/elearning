@@ -11,7 +11,37 @@ class MngApprenant extends Database implements ApprenantInt
 {
     public function addApprenant(Apprenant $apprenant)
     {
-        // TODO: Implement addApprenant() method.
+        $sql = "INSERT INTO apprenants
+                SET nomApp=:nom, prenomsApp=:prenoms, contactApp=:contact, 
+                    emailApp=:email, passApp=:passe, pseudoApp=:pseudo, dateInscripApp=NOW()";
+        try {
+            $req = $this->getDb()->prepare($sql);
+            $nom = $apprenant->getNomApp();
+            $prenom = $apprenant->getPrenomsApp();
+            $contact = $apprenant->getContactApp();
+            $email = $apprenant->getEmailApp();
+            $pseudo = $apprenant->getPseudoApp();
+            $passe = $apprenant->getPassApp();
+
+            $req->bindParam(':nom', $nom);
+            $req->bindParam(':prenoms', $prenom);
+            $req->bindParam(':contact', $contact);
+            $req->bindParam(':email', $email);
+            $req->bindParam(':pseudo', $pseudo);
+            $req->bindParam(':passe', $passe);
+
+            if ($req->execute()) return true;
+        } catch (\Exception $e) {
+            $this->setErrorMsg($e->getMessage());
+            return false;
+        }
+    }
+
+    public function inscriptionFormation($id_app, $module, $mode_paiement, $reference)
+    {
+        $sql = "INSERT INTO inscriptionformation 
+                SET dateInscription=NOW(), moyenPaiement=:moyen, sessionFormation_idSessionForm:session,
+                    apprenants_idApprenant=:apprenant, reference=:reference";
     }
 
     public function getApprenants()
