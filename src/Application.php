@@ -237,4 +237,9 @@ class Application
         }
 
     }
+
+    public function getUrlParams()
+    {
+        return $this->url_params;
+    }
 }

@@ -14,18 +14,27 @@ class MngFormateur extends Database implements FormateurInt
         $sql = "INSERT INTO formateurs
                 SET nomForm=:nom, prenomsForm=:prenom, emailForm=:email,
                     passForm=:mdp, specialites=:specialite, contactForm=:contact, 
-                    paysForm=:pays, villeForm=:ville, dateAjoutForm=NOW()";
+                    pays=:pays, ville=:ville, dateAjoutForm=NOW()";
         try{
             if ($formateur){
+                $nom = $formateur->getNomForm();
+                $prenom = $formateur->getPrenomsForm();
+                $email = $formateur->getEmailForm();
+                $passe = $formateur->getPrenomsForm();
+                $specialite = $formateur->getSpecialite();
+                $contact = $formateur->getContactForm();
+                $pays = $formateur->getPays();
+                $ville = $formateur->getVille();
+
                 $request = $this->getDb()->prepare($sql);
-                $request->bindParam(':nom', $formateur->getNomForm());
-                $request->bindParam(':prenom', $formateur->getPrenomForm());
-                $request->bindParam(':email', $formateur->getEmailForm());
-                $request->bindParam(':mdp', $formateur->getMdpForm());
-                $request->bindParam(':specialite', $formateur->getSpecialiteForm());
-                $request->bindParam(':contact', $formateur->getContactForm());
-                $request->bindParam(':pays', $formateur->getPaysForm());
-                $request->bindParam(':ville', $formateur->getVilleForm());
+                $request->bindParam(':nom', $nom);
+                $request->bindParam(':prenom',$prenom);
+                $request->bindParam(':email', $email);
+                $request->bindParam(':mdp', $passe);
+                $request->bindParam(':specialite', $specialite);
+                $request->bindParam(':contact', $contact);
+                $request->bindParam(':pays', $pays);
+                $request->bindParam(':ville', $ville);
 
                 if ($request->execute()){
                     return true;

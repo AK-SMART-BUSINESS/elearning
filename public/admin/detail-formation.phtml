@@ -1,9 +1,80 @@
+<?php 
+    // var_dump($error); 
+    // die();
+    if (isset($error) && $error != null):
+?>
+<div class="uk-alert uk-alert-danger" uk-alert>
+    <b>Une erreur est survenue !</b>
+    <p><?= $error; ?></p>
+</div>
+<?php else: ?>
 <h1 class="uk-heading-line uk-text-left">
 <span>Gestion des formations</span>
 </h1>
+<?php if(isset($formation) && $formation): ?>
 <div>
     <h5>Détail de la formation</h5>
+    <!-- This is a button toggling the modal -->
+    <div class="uk-text-right"><button class="uk-button uk-button-small uk-button-primary" uk-toggle="target: #settings" type="button">Paramétrer</button></div>
 </div>
+<div>
+    <b>Module de formation:</b>
+    <h4 class="uk-margin-remove">
+        <?= html_entity_decode($formation->intituleForm); ?>
+    </h4>   
+    <small>Coût: <b><?= $formation->prix; ?></b></small> 
+</div>
+<div class="uk-width-large uk-height-medium">
+    <img src="<?= URL.'media/uploads/'.$formation->image; ?>" alt="<?= $formation->image; ?>">
+</div>
+<div>
+    <b>Description:</b>
+    <?= html_entity_decode($formation->descriptionForm); ?>
+</div>
+<div>
+    <b>Préréquis:</b>
+    <?= html_entity_decode($formation->prerequis); ?>
+</div>
+
+<!-- This is the modal -->
+<div id="settings" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Parametrage de la formation</h2>
+        <form id="frmParamModule" action="" method="post" novalidate>
+            <input type="hidden" name="module" id="module" value="<?= $formation->idModuleForm?>">
+            <div class="uk-margin">
+                <label for="list_formateur" class="uk-form-label">Formateur</label>
+                <select class="uk-select" name="list_formateur" id="list_formateur" required></select>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-inline uk-width-small">
+                    <label for="session_num">Session N°</label>
+                    <input type="number" min="1" id="session_num" class="uk-input">
+                </div>
+                <div class="uk-inline uk-width-small">
+                    <label for="date_debut">Date de début</label>
+                    <input type="date" id="date_debut" class="uk-input">
+                </div>
+                <div class="uk-inline uk-width-small">
+                    <label for="date_fin">Date de fin</label>
+                    <input type="date" id="date_fin" class="uk-input">
+                </div>
+            </div>
+            <div class="uk-text-right">
+                <button class="uk-button uk-button-primary uk-button-small" type="submit">Enregistrer</button>
+            </div>
+        </form>        
+    </div>
+</div>
+
 
 <script src="<?= URL.'public/admin/js/app.js'; ?>"></script>
 <script src="<?= URL.'public/admin/js/detail-formations.js'; ?>"></script>
+<?php else: ?>
+    <div class="uk-alert uk-alert-danger" uk-alert>
+        <b>Oups !!!!</b>
+        <p>Ce module n'existe pas ou a été suprimé.</p>
+    </div>
+<?php endif; ?>
+<?php endif; ?>

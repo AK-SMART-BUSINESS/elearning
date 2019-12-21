@@ -1,6 +1,7 @@
 <?php
 namespace App;
 //use Libs\panel\MngArticles;
+use Core\Libs\MngFormation;
 
 /**
  * Class définissant les actions de l'application
@@ -52,6 +53,50 @@ class Main
   {
     ob_start();
     require "public/tpl/register.phtml";
+      $output = ob_get_clean();
+    require "public/tpl/template.phtml";
+  }
+
+  public function detailCours()
+  {
+    $app = new MngFormation();
+      $error = null;
+      // var_dump($this->getParams());
+      // die();
+      if (count($this->getParams()) == 1){
+          $id_formation = (int) $this->getParams()[1];
+          if ($id_formation > 0) {
+              $formation = $app->getCourseDetail($id_formation);
+          } else {
+              $error = 'paramètre incorrect';
+          }
+      }else {
+          $error = 'paramètre incorrect';
+      }
+    ob_start();
+    require "public/tpl/detail.phtml";
+      $output = ob_get_clean();
+    require "public/tpl/template.phtml";
+  }
+
+  public function inscriptionCours()
+  {
+    $app = new MngFormation();
+      $error = null;
+      // var_dump($this->getParams());
+      // die();
+      if (count($this->getParams()) == 1){
+          $id_formation = (int) $this->getParams()[1];
+          if ($id_formation > 0) {
+              $formation = $app->getCourseDetail($id_formation);
+          } else {
+              $error = 'paramètre incorrect';
+          }
+      }else {
+          $error = 'paramètre incorrect';
+      }
+    ob_start();
+    require "public/tpl/inscription-cours.phtml";
       $output = ob_get_clean();
     require "public/tpl/template.phtml";
   }
@@ -183,6 +228,19 @@ class Main
   }
   public function detailFormation()
   {
+      $app = new MngFormation();
+      $error = null;
+      if (count($this->getParams()) == 1){
+          $id_formation = (int) $this->getParams()[2];
+          if ($id_formation > 0) {
+              $formation = $app->getFormation($id_formation);
+          } else {
+              $error = 'paramètre incorrect';
+          }
+      }else {
+          $error = 'paramètre incorrect';
+      }
+
       ob_start();
       require "public/admin/detail-formation.phtml";
       $output = ob_get_clean();

@@ -52,6 +52,7 @@ let Formateur = {
     getListFormateur: (tag, optionTag) => {
         $.get("app/.private/formateur/list-formateur.php", function (res) {
             if (res.success) {
+                let formateur0ptList = `<option value="">----------- Liste des formateurs ----------</option>`
                 let output = `<h4>Toutes les formations</h4><div class="uk-alert uk-alert-primary" uk-alert>${res.message}</div>`
                     output += `<table class="uk-table uk-table-small">
                         <thead>
@@ -74,14 +75,31 @@ let Formateur = {
                         <td>${formateur.dateAjoutForm}</td>
                         <td class="${class_etat}">${etat}</td></tr>`
                         output += htm
+                    formateur0ptList += `<option value="${formateur.idFormateur}">${formateur.nomForm} ${formateur.prenomsForm}</option>`
                 }
                 output += `<tbody></table>`
-                $(tag).html(output)
+                if (tag != '') {$(tag).html(output)}
+                if (optionTag != undefined) {$(optionTag).html(formateur0ptList)}
             } else {
                 let output = `<div class="uk-alert uk-alert-danger" uk-alert>
                                 <p>Pas de formation enregistrée</p>
                             </div>`
                 $(tag).html(output)
+            }
+        })
+    }
+}
+
+let Formation = {
+    addFormationSession: (data) => {
+        $.post("app/.private/formation/add-session.php", data, function (res) {
+            console.log(res);
+            alert(res.message)
+            if (res.success) {
+                window.location.reload()
+            } else {
+                console.error()
+                return false                
             }
         })
     }

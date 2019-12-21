@@ -1,0 +1,76 @@
+<?php if(isset($error) && $error != null): ?>
+<div class="uk-alert uk-alert-danger" uk-alert>
+    <b>Une erreur est survenue !</b>
+    <p><?= $error; ?></p>
+</div>
+<?php else: ?>
+<?php if(isset($formation) && $formation): ?>
+<h1 class="uk-text-heading uk-text-center">
+    Détail du cours
+</h1>
+
+<div class="uk-grid uk-child-width-1-2 uk-grid-divider uk-grid-match" uk-grid>
+    <div>
+        <img style="max-height: 280px; width: 100%" src="<?= URL.'media/uploads/'.$formation->image; ?>" alt="">
+    </div>
+    <div>
+        <div class="uk-card uk-card-small" uk-card-default>
+            <div class="uk-card-header">
+                <h3 class="uk-card-title uk-margin-remove uk-text-bold uk-text-primary"><?= $formation->intituleForm; ?></h3>
+            </div>
+            <div class="uk-card-body">
+                <h4 class="uk-margin-remove">
+                    <small>Thème: </small>
+                    <span><?= $formation->theme; ?></span>
+                </h4>
+                <p class="uk-margin-remove">
+                    Coût: <b><?= $formation->prix; ?> F CFA</b>
+                </p>
+            </div>
+            <div class="uk-card-footer uk-text-center">                
+                <!-- <a href="./inscription-cours/<?= $formation->idModuleForm; ?>" class="uk-button uk-button-primary">S'incrire</a> -->
+                <!-- This is a button toggling the modal -->
+                <button uk-toggle="target: #signe" type="button" class="uk-button uk-button-primary">S'incrire</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="uk-width-1-1">
+    <h4>Description</h4>
+    <div>
+        <?= html_entity_decode($formation->descriptionForm); ?>
+    </div>
+</div>
+
+<div class="uk-width-1-1">
+    <h4>Preréquis</h4>
+    <div>
+    <?= html_entity_decode($formation->prerequis); ?>
+    </div>
+</div>
+
+<div id="signe" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Comment vous s'incrire</h2>
+        </div>
+        <div class="uk-modal-body">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, deleniti cum placeat omnis voluptates expedita fuga quia dolorem nam temporibus in ipsa suscipit distinctio autem earum debitis facilis possimus et.
+            </p>
+            <h4>Pour vous inscrire cliquez sur continuer.</h4>
+        </div>
+        <div class="uk-modal-footer uk-text-center">
+            <a href="./inscription-cours/<?= $formation->idModuleForm; ?>" class="uk-button uk-button-danger">Continuer</a>
+        </div>
+    </div>
+</div>
+<?php else: ?>
+    <div class="uk-alert uk-alert-danger" uk-alert>
+        <b>Oups !!!!</b>
+        <p>Ce module n'existe pas ou a été suprimé.</p>
+    </div>
+<?php endif; ?>
+<?php endif; ?>
